@@ -1,0 +1,20 @@
+.bg-position {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+img{
+    max-width: 100%;
+}
+
+
+// custom-container-here
+$container:(1830, 1630, 1760, 1650, 1430, 1230, 548);
+
+@each $number in $container{
+	@media (min-width:1400px) {
+		.container-#{$number}{
+			max-width: #{$number}px;
+		}
+	}
+}

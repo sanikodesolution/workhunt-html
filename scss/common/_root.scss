@@ -1,0 +1,117 @@
+//Root 
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+//Define theme colors
+$theme-color1: #23589C;
+$theme-color2: #F06B1C;
+
+$theme-color-white: #ffffff;
+$white-color-rgb: 255,255,255;
+
+$body-color: #767676;
+$theme-color-gray: #E6E6E6;
+$theme-color-dark: #1D1D1D;
+$theme-color-black: #000000;
+$theme-color-black-rgb: 0,0,0;
+
+
+
+:root {
+  //theme color
+  --theme-color1: #{$theme-color1};
+  --theme-color2: #{$theme-color2};
+
+  --white-color:  #{$theme-color-white};
+  --white-color-rgb:  #{$white-color-rgb};  
+
+  --body-color:   #{$body-color};
+  --gray-color:   #{$theme-color-gray};
+
+  --dark-color:   #{$theme-color-dark};
+  --black-color:  #{$theme-color-black};
+  --black-color-rgb:  #{$theme-color-black-rgb};
+
+  
+  //theme colors RGB
+  --theme-color1-rgb: #{hexToRGB($theme-color1)};
+  --theme-color2-rgb: #{hexToRGB($theme-color2)};
+
+
+  //text heading color
+  --text-black:         var(--black-color);
+  --text-white:         var(--white-color);
+  --text-color:         var(--body-color);
+  --text-gray:          var(--gray-color);
+  --headings-color:     var(--dark-color);
+  --link-color:         var(--theme-color1);
+  --link-hover-color:   #5B8C51;
+  --bleached-linen:     #f3ebe0;
+  
+
+  //font families
+  --jakarta-font: "Plus Jakarta Sans", sans-serif;
+  --jost-font: "Jost", sans-serif;
+
+
+  //font family variables
+  --body-font: var(--jakarta-font);
+  --text-font: var(--body-font);
+
+  --title-font: var(--jakarta-font);
+  --title-font2: var(--marcellus-font);
+  --headings-font: var(--title-font);
+
+
+  //body
+  --font-size-13:           13px;
+  --font-size-14:           14px;
+  --font-size-15:           15px;
+  --font-size-16:           16px;
+  --body-font-size:         var(--font-size-14);
+  --body-font-weight:       400;
+  --body-font-weight-bold:  600;
+  --body-line-height:       1.71;
+
+
+  //heading font size + weight
+  --line-height-heading: 1.2;
+  --line-height-heading2: 1.75;
+  --line-height-heading-h1: 1.1;
+  --line-height-heading-small: 1.4;
+
+
+  --h1-font-size:     50px;
+  --h2-font-size:     30px;
+  --h3-font-size:     24px;
+  --h4-font-size:     20px;
+  --h5-font-size:     18px;
+  --h6-font-size:     16px;
+
+
+  --h1-font-weight: 600;
+  --h2-font-weight: 600;
+  --h3-font-weight: 600;
+  --h4-font-weight: 600;
+  --h5-font-weight: 600;
+  --h6-font-weight: 600;
+
+
+  //section title
+  --sec-title-color:                 var(--headings-color);
+  --sec-title-font-size:             var(--h2-font-size);
+  --sec-title-font-family:           var(--title-font);
+  --sec-title-font-weight:           var(--h2-font-weight);
+
+  //section sub title
+  --sec-title-subtitle-color:        #819291;
+  --sec-title-subtitle-font-size:    16px;
+  --sec-title-subtitle-font-family:  var(--text-font);
+  --font-weight-400:  400;
+  --font-weight-500:  500;
+  --font-weight-600:  600;
+  --font-weight-700:  700;
+
+  //container
+}

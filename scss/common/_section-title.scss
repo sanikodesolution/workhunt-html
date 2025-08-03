@@ -1,0 +1,17 @@
+
+/*
+ * section-title.scss
+ * -----------------------------------------------
+*/
+.section-title{
+    margin-bottom: 50px;
+    .sub-title{
+        @include sub-title1;
+    }
+    .title{
+        @include sec-title1;
+        &.roboto-font{
+            font-family: var(--roboto-font);
+        }
+    }
+}

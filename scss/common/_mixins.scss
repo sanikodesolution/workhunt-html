@@ -1,0 +1,206 @@
+/*
+ * mixins.scss
+ * -----------------------------------------------
+*/
+
+// bg color
+@mixin bg-color($color, $opacity) {
+  background-color: rgba($color, $opacity);
+}
+
+// placeholder input
+@mixin su-placeholder {
+  &::-webkit-input-placeholder {
+      @content;
+  }
+  &:-moz-placeholder {
+      @content;
+  }
+  &::-moz-placeholder {
+      @content;
+  }
+  &:-ms-input-placeholder {
+      @content;
+  }
+}
+
+// filter
+@mixin filter($value) {
+  -webkit-filter: $value;
+      filter: $value;
+}
+
+// appearance for select
+@mixin appearance($value) {
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  -ms-appearance: $value;
+  -o-appearance: $value;
+  appearance: $value;
+}
+
+// keyframes
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+      @content;
+  }
+  @-moz-keyframes #{$name} {
+      @content;
+  }
+  @-ms-keyframes #{$name} {
+      @content;
+  }
+  @keyframes #{$name} {
+      @content;
+  }
+}
+
+//Background
+@mixin background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+//Transition
+@mixin transition($time) {
+  -webkit-transition: all $time ease-out 0s;
+  -moz-transition: all $time ease-out 0s;
+  -ms-transition: all $time ease-out 0s;
+  -o-transition: all $time ease-out 0s;
+  transition: all $time ease-out 0s;
+}
+
+// border--botom-default
+@mixin suborder ($color, $bgsize, $bgsize2) {
+  background-image: linear-gradient($color, $color), linear-gradient($color, $color);
+  background-size: $bgsize 1px, $bgsize2 1px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s linear;
+} 
+
+// Transform
+@mixin transform($transforms) {
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  -o-transform: $transforms;
+  transform: $transforms;
+}
+
+//Border
+@mixin border-radius($man) {
+  -webkit-border-radius: $man;
+  -moz-border-radius: $man;
+  -o-border-radius: $man;
+  -ms-border-radius: $man;
+  border-radius: $man;
+}
+
+// Sentence case
+@mixin sentence-case() {
+  text-transform: lowercase;
+  &:first-letter {
+    text-transform: uppercase;
+  }
+}
+
+// Flexbox display
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+// Box shadows
+@mixin box-shadow($shadow) {
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -ms-box-shadow: $shadow;
+  -o-box-shadow: $shadow;
+  box-shadow: $shadow;
+}
+
+// Radius Box
+@mixin square-box($size, $circle: false) {
+  height: $size;
+  line-height: $size;
+  text-align: center;
+  width: $size;
+
+  @if $circle {
+    border-radius: 50%;
+  }
+}
+
+// transition specific
+@mixin su-transition($property: all, $time: .3s,  $func : ease-out, $delay : 0s) {
+    -webkit-transition: $property $time $delay $func;
+    -moz-transition: $property $time $delay $func;
+    -ms-transition: $property $time $delay $func;
+    -o-transition: $property $time $delay $func;
+    transition: $property $time $delay $func;
+}
+@mixin sub-title1 {
+  color: var(--headings-color);
+  font-style: normal;
+  font-size: 13px;
+  font-weight: var(--font-weight-500);
+  letter-spacing: 0.02em;
+  line-height: 24px;
+}
+@mixin sec-title1 {
+  color: var(--headings-color);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 38px;
+}
+@mixin form-lebel-typo {
+  color: var(--text-color);
+  font-style: normal;
+  font-weight: var(--font-weight-500);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  line-height: 22px;
+}
+@mixin swiper-Slide-TZ {
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  flex-shrink: 0;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transition-property: transform;
+}
+// Responsive Font Size
+@mixin responsive-font($min, $preferred, $max, $line-height: 1.5) {
+  font-size: clamp($min, $preferred, $max);
+  line-height: $line-height;
+}
+
+// Responsive Variables
+$x4l: 'only screen and (min-width: 1700px) and (max-width: 1800px)';
+$x3l: 'only screen and (min-width: 1600px) and (max-width: 1700px)';
+$xxl: 'only screen and (min-width: 1400px) and (max-width: 1599px)';
+$xl: 'only screen and (min-width: 1200px) and (max-width: 1399px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
+$xs:'(max-width: 575px)';
+
+
+// responsive variable for wordpress admin bar
+$wp-sm: '@media (max-width: 782px)';
+$wp-xs: '@media (max-width: 600px)';
+
+@mixin responsive-font($min, $preferred, $max, $line-height: 1.5) {
+  font-size: clamp($min, $preferred, $max);
+  line-height: $line-height;
+}

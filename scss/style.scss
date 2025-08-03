@@ -1,0 +1,119 @@
+/* Suvique - Exclusive & Multipurpose eCommerce HTML Template
+
+Template Name: Suvique
+Version: 1.0.0
+License: copyright commercial
+
+/************ TABLE OF CONTENTS ***************
+1. Fonts
+2. Reset
+3. Global Settings
+4. Main Header / TWO
+5. Sticky Header 
+6. Mobile Menu
+7. Section Title
+8. Page Title
+9. Main Slider
+10. Banner Section
+
+26. Main Footer
+**********************************************/
+
+
+@import "scss-bootstrap/functions";
+@import "scss-bootstrap/variables";
+@import "scss-bootstrap/mixins";
+
+@import "common/background.scss";
+@import "common/default.scss";
+@import "common/mixins.scss";
+@import "common/root.scss";
+@import "common/typography.scss";
+@import "common/button.scss";
+@import "common/animetion.scss";
+@import "common/search.scss";
+@import "common/section-title.scss";
+
+/*** 
+
+====================================================================
+Fonts
+====================================================================
+
+***/
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant:ital,wght@0,300..700;1,300..700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Lora:ital,wght@0,400..700;1,400..700&family=Marcellus+SC&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+@import url('bootstrap-select.min.css');
+@import url('animate.css');
+@import url('jquery-ui.min.css');
+@import url('custome-css.css');
+@import url('font-awesome.css');
+@import url('magnific-popup.css');
+@import url('odometer.css');
+@import url('swiper-bundle.min.css');
+@import url('menu.css');
+@import url('flaticon.css');
+@import url('wow.min.css');
+
+
+
+// import SCSS components one by one
+
+@import "reset.scss";
+@import "buttons.scss";
+@import "beforeafter.scss";
+@import "header-top.scss";
+@import "header.scss";
+@import "inner-header.scss";
+@import "menu.scss";
+@import "mobile-menu.scss";
+@import "banner.scss";
+@import "brands.scss";
+@import "blog.scss";
+@import "blog-list.scss";
+@import "blog-single.scss";
+@import "cetagory.scss";
+@import "collections.scss";
+@import "countdown.scss";
+@import "contact.scss";
+@import "cta.scss";
+@import "faq.scss";
+@import "cart.scss";
+@import "checkout.scss";
+@import "fashion.scss";
+@import "frame.scss";
+@import "instagram-feed.scss";
+@import "icon-box.scss";
+@import "login.scss";
+@import "news.scss";
+@import "product.scss";
+@import "tabs.scss";
+@import "sliders.scss";
+@import "product-video.scss";
+@import "store.scss";
+@import "testimonial.scss";
+@import "features.scss";
+@import "newsletter.scss";
+
+@import "categories.scss";
+@import "text-slider.scss";
+@import "shop-page.scss";
+@import "shop.scss";
+@import "shop-single.scss";
+@import "location.scss";
+@import "map.scss";
+@import "video.scss";
+@import "marquee.scss";
+@import "layout24.scss";
+@import "layout25.scss";
+// @import "sidebar.scss";
+
+
+
+//inner
+@import "inner/page-title.scss";
+@import "inner/about.scss";
+
+@import "footer.scss";
