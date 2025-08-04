@@ -51,15 +51,15 @@ $theme-color-black-rgb: 0,0,0;
   
 
   //font families
-  --jakarta-font: "Plus Jakarta Sans", sans-serif;
-  --jost-font: "Jost", sans-serif;
+  --heading-font: "SUSE", sans-serif;
+  --body-font: "SUSE", sans-serif;
 
 
   //font family variables
-  --body-font: var(--jakarta-font);
+  --body-font: var(--heading-font);
   --text-font: var(--body-font);
 
-  --title-font: var(--jakarta-font);
+  --title-font: var(--heading-font);
   --title-font2: var(--marcellus-font);
   --headings-font: var(--title-font);
 
@@ -69,16 +69,16 @@ $theme-color-black-rgb: 0,0,0;
   --font-size-14:           14px;
   --font-size-15:           15px;
   --font-size-16:           16px;
-  --body-font-size:         var(--font-size-14);
+  --body-font-size:         var(--font-size-16);
   --body-font-weight:       400;
-  --body-font-weight-bold:  600;
-  --body-line-height:       1.71;
+  --body-font-weight-bold:  700;
+  --body-line-height:       1.5;
 
 
   //heading font size + weight
-  --line-height-heading: 1.2;
+  --line-height-heading: 1.21;
   --line-height-heading2: 1.75;
-  --line-height-heading-h1: 1.1;
+  --line-height-heading-h1: 1.19;
   --line-height-heading-small: 1.4;
 
 
