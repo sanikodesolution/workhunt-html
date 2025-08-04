@@ -29,7 +29,6 @@ License: copyright commercial
 @import "common/mixins.scss";
 @import "common/root.scss";
 @import "common/typography.scss";
-@import "common/button.scss";
 @import "common/animetion.scss";
 @import "common/search.scss";
 @import "common/section-title.scss";
@@ -62,58 +61,12 @@ Fonts
 // import SCSS components one by one
 
 @import "reset.scss";
-@import "buttons.scss";
-@import "beforeafter.scss";
-@import "header-top.scss";
-@import "header.scss";
-@import "inner-header.scss";
-@import "menu.scss";
-@import "mobile-menu.scss";
-@import "banner.scss";
-@import "brands.scss";
-@import "blog.scss";
-@import "blog-list.scss";
-@import "blog-single.scss";
-@import "cetagory.scss";
-@import "collections.scss";
-@import "countdown.scss";
-@import "contact.scss";
-@import "cta.scss";
-@import "faq.scss";
-@import "cart.scss";
-@import "checkout.scss";
-@import "fashion.scss";
-@import "frame.scss";
-@import "instagram-feed.scss";
-@import "icon-box.scss";
-@import "login.scss";
-@import "news.scss";
-@import "product.scss";
-@import "tabs.scss";
-@import "sliders.scss";
-@import "product-video.scss";
-@import "store.scss";
-@import "testimonial.scss";
-@import "features.scss";
-@import "newsletter.scss";
+@import "button.scss";
 
-@import "categories.scss";
-@import "text-slider.scss";
-@import "shop-page.scss";
-@import "shop.scss";
-@import "shop-single.scss";
-@import "location.scss";
-@import "map.scss";
-@import "video.scss";
-@import "marquee.scss";
-@import "layout24.scss";
-@import "layout25.scss";
 // @import "sidebar.scss";
 
 
 
 //inner
-@import "inner/page-title.scss";
-@import "inner/about.scss";
-
-@import "footer.scss";
+// @import "inner/page-title.scss";
+// @import "inner/about.scss";

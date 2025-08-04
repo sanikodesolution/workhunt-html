@@ -9,9 +9,6 @@
         @include sub-title1;
     }
     .title{
-        @include sec-title1;
-        &.roboto-font{
-            font-family: var(--roboto-font);
-        }
+        
     }
 }

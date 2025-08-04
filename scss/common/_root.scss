@@ -4,18 +4,25 @@
 }
 
 //Define theme colors
-$theme-color1: #23589C;
-$theme-color2: #F06B1C;
+$theme-color1: #F56300;
+$theme-color2: #0176EA;
+$theme-color3: #8330C2;
+$theme-color4: #0BB289;
+$theme-color5: #56ABFF;
+$theme-color6: #FF8646;
+$theme-color7: #D60BE2;
+$theme-color8: #11AB8B;
 
-$theme-color-white: #ffffff;
-$white-color-rgb: 255,255,255;
+$white-color: #ffffff;
+$ghost-white: #F2F2F9;
+$dark-color:  #151517;
+$black-color: #000000;
 
-$body-color: #767676;
-$theme-color-gray: #E6E6E6;
-$theme-color-dark: #1D1D1D;
-$theme-color-black: #000000;
-$theme-color-black-rgb: 0,0,0;
+$body-color: #545454;
+$gray-color: #F2F2F9;
+$dark-gray: #8B8B8B;
 
+$review-color: #F8B68A;
 
 
 :root {
@@ -23,15 +30,16 @@ $theme-color-black-rgb: 0,0,0;
   --theme-color1: #{$theme-color1};
   --theme-color2: #{$theme-color2};
 
-  --white-color:  #{$theme-color-white};
-  --white-color-rgb:  #{$white-color-rgb};  
+  --white-color:  #{$white-color};
 
   --body-color:   #{$body-color};
-  --gray-color:   #{$theme-color-gray};
+  --gray-color:   #{$gray-color};
+  --ghost-white:  #{$ghost-white};
 
-  --dark-color:   #{$theme-color-dark};
-  --black-color:  #{$theme-color-black};
-  --black-color-rgb:  #{$theme-color-black-rgb};
+  --dark-color:   #{$dark-color};
+  --black-color:  #{$black-color};
+  --dark-gray:    #{$dark-gray};
+  --review-color: #{$review-color};
 
   
   //theme colors RGB
@@ -42,6 +50,7 @@ $theme-color-black-rgb: 0,0,0;
   //text heading color
   --text-black:         var(--black-color);
   --text-white:         var(--white-color);
+  --ghost-white:        var(--ghost-white);
   --text-color:         var(--body-color);
   --text-gray:          var(--gray-color);
   --headings-color:     var(--dark-color);
@@ -82,20 +91,20 @@ $theme-color-black-rgb: 0,0,0;
   --line-height-heading-small: 1.4;
 
 
-  --h1-font-size:     50px;
-  --h2-font-size:     30px;
-  --h3-font-size:     24px;
-  --h4-font-size:     20px;
-  --h5-font-size:     18px;
-  --h6-font-size:     16px;
+  --h1-font-size:     72px;
+  --h2-font-size:     52px;
+  --h3-font-size:     30px;
+  --h4-font-size:     24px;
+  --h5-font-size:     20px;
+  --h6-font-size:     17px;
 
 
-  --h1-font-weight: 600;
-  --h2-font-weight: 600;
-  --h3-font-weight: 600;
-  --h4-font-weight: 600;
-  --h5-font-weight: 600;
-  --h6-font-weight: 600;
+  --h1-font-weight: 700;
+  --h2-font-weight: 700;
+  --h3-font-weight: 700;
+  --h4-font-weight: 700;
+  --h5-font-weight: 700;
+  --h6-font-weight: 700;
 
 
   //section title
@@ -108,6 +117,7 @@ $theme-color-black-rgb: 0,0,0;
   --sec-title-subtitle-color:        #819291;
   --sec-title-subtitle-font-size:    16px;
   --sec-title-subtitle-font-family:  var(--text-font);
+  --font-weight-300:  300;
   --font-weight-400:  400;
   --font-weight-500:  500;
   --font-weight-600:  600;

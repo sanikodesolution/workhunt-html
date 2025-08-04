@@ -152,13 +152,6 @@
   letter-spacing: 0.02em;
   line-height: 24px;
 }
-@mixin sec-title1 {
-  color: var(--headings-color);
-  font-size: 30px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  line-height: 38px;
-}
 @mixin form-lebel-typo {
   color: var(--text-color);
   font-style: normal;
