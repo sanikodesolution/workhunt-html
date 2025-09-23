@@ -1,0 +1,117 @@
+.contact-wrapper{
+  &.style1{
+    .contact-top{
+      padding-bottom: 90px;
+      .contact-top-card{
+        text-align: center;
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 24px;
+        }
+        .contact-top-icon{
+          height: 35px;
+          width: 35px;
+          width: 100%;
+          background-repeat: no-repeat;
+        }
+        .contact-top-title{
+          @include title-typo1;
+          text-transform: uppercase;
+          padding: 20px 0 6px 0;
+        }
+        .contact-top-link{
+          color: var(--dark-color);
+          font-family: var(--body-font);
+          font-size: 14px;
+          font-style: normal;
+          font-weight: var(--font-weight-500);
+          line-height: 28px;
+          text-transform: lowercase;
+        }
+      }
+    }
+  }
+}
+.registration-wrapper {
+  &.style1 {
+    .log_reg_form {
+      background-color: var(--white-color);
+      border: none;
+      border-radius: 0px;
+      padding: 0px 40px;
+      position: relative;
+      box-shadow: none;
+      @include media-breakpoint-down(xl) {
+        padding: 0 20px;
+      }
+      .sign_up_form {
+        .form-control {
+          background-color: var(--white-color);
+          border: 0;
+          border-bottom: 1px solid var(--gray-color);
+          border-radius: 0px;
+          color: var(--dark-color);
+          font-family: var(--body-font);
+          font-size: 15px;
+          height: 55px;
+          margin-bottom: 20px;
+          padding: 0;
+          &::placeholder {
+            color: var(--text-color);
+            font-family: var(--body-font);
+            font-size: 13px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px;
+            letter-spacing: 0.26px;
+          }
+          &:focus {
+            border-bottom: 1px solid var(--dark-color);
+            box-shadow: none;
+          }
+        }
+        .form-label {
+          @include form-lebel-typo;
+          font-style: normal;
+          padding: 0;
+          margin: 0;
+        }
+        p a {
+          @include shop-typo2;
+          font-style: normal;
+          line-height: normal;
+          text-transform: uppercase;
+          padding-bottom: 0;
+          &.login-button1{
+            position: relative;  
+            padding-right: 30px;
+            &::after{
+              position: absolute;
+              right: 10px;
+              top: 4px;
+              height: 10px;
+              width: 10px;
+              border-radius: 50%;
+              content: "";
+              background-color: var(--gray-color);
+            }
+          }
+        }
+        textarea{
+          height: 200px !important;
+          @include media-breakpoint-down(sm) {
+            height: 100px !important;
+          }
+        }
+      }
+      .tn-log {
+        background: var(--dark-color);
+        @include shop-typo2;
+        border: none;
+        margin-top: 10px;
+        padding: 16px 35px;
+        text-transform: uppercase;
+        width: 100%;
+      }
+    }
+  }
+}

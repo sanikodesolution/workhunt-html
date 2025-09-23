@@ -1,0 +1,75 @@
+/***  Sliders  ***/
+// Offer slider 15 style
+.offer-slider-15 {
+  background: var(--dark-color);
+  padding: 30px 0 !important;
+  @include media-breakpoint-down(lg) {
+    padding: 20px 0 !important;
+  }
+  .text-content {
+    .title {
+      color: var(--white-color);
+      font-family: var(--libre-font);
+      font-style: normal;
+      @include responsive-font(24px, 1.87vw, 30px, 1.23);
+      font-weight: 400;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+    .code {
+      color: var(--white-color);
+      font-family: var(--outfit-font);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 30px;
+      margin: 0 40px;
+    }
+    .su-btn-4-black {
+      font-family: var(--jost-font);
+      font-weight: 500;
+    }
+  }
+}
+
+// categories slider 9 style
+.categories-9-slider {
+  .swiper-slide {
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    flex-shrink: 0;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transition-property: transform;
+  }
+  .overly {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.40) 100%);
+  }
+  .spacing {
+    padding: 680px 0 59px 0;
+  }
+  .navigation-9 {
+    @include media-breakpoint-down(xl) {
+      display: none;
+    }
+    span {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 50px;
+      border: 1px solid var(--white-color);
+      background: rgba($theme-color-white, 0.10);
+      backdrop-filter: blur(25px);
+    }
+    .prev {
+      left: 60px;
+    }
+    .next {
+      left: calc(100% - 110px);
+    }
+  }
+}

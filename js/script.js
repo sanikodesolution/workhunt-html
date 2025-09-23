@@ -142,23 +142,89 @@
         };
     }
 
+
     /* ----- Mobile Nav ----- */
-    $(function() {
-        $('nav#menu').mmenu();
+    // $(function() {
+    //     $('nav#menu').mmenu();
+    // });
+
+
+    // === jQuery MMENU S T A R T ===
+    $(function () {
+      var headerHTML =
+        '<div class="mmx-header">' +
+          '<div class="mmx-left">' +
+            '<a href="#" class="js-mm-close"><i class="flaticon-close"></i></a>' +
+            '<a href="#" class="js-mm-search cart-search-btn"><i class="flaticon-web"></i></a>' +
+          '</div>' +
+          '<div class="mmx-logo"><img src="images/logo-new.svg" alt="newsletter-img"></div>' +
+          '<div class="mmx-right">' +
+            '<a class="signin-cart-btn" href="#"><i class="flaticon-user-1"></i></a>' +
+            '<a class="cart-search-btn" href="#"><i class="flaticon-shopping-bag"></i></a>' +
+          '</div>' +
+        '</div>';
+
+      var footerHTML =
+        '<div class="mmx-footer">' +
+        '<h4 class="social-title">FOLLOW US</h4>' +
+        '<div class="mmx-social">' +
+          '<a href="#"><i class="fa-brands fa-facebook-f"></i></a>' +
+          '<a href="#"><i class="fa-brands fa-instagram"></i></a>' +
+          '<a href="#"><i class="fa-brands fa-x-twitter"></i></a>' +
+          '<a href="#"><i class="fa-brands fa-youtube"></i></a>' +
+          '<a href="#"><i class="fa-brands fa-pinterest"></i></a>' +
+          '<a href="#"><i class="fa-brands fa-tiktok"></i></a>' +
+        '</div>' +
+        '<div class="mmx-lang">' +
+          '<label for="lang-select">Change location and language</label>' +
+          '<select id="lang-select">' +
+            '<option value="us-en" selected>United States · English (US)</option>' +
+            '<option value="us-es">Spanish · Español</option>' +
+            '<option value="uk-en">United Kingdom · English (UK)</option>' +
+            '<option value="fr-fr">France · Français</option>' +
+            '<option value="bd-bn">Bangladesh · বাংলা</option>' +
+          '</select>' +
+        '</div>' +
+      '</div>';
+
+      // init mmenu with back button enabled
+      var $menu = $("#menu").mmenu({
+        extensions: ["position-left","pagedim-white","theme-light"],
+        slidingSubmenus: true,
+        navbar: { title: "Demo" }, // shows "Back" button when in submenus
+        navbars: [
+          { position: "top", content: [ headerHTML ] },
+          { position: "bottom", content: [ footerHTML ] }
+        ]
+      });
+
+      var api = $menu.data("mmenu");
+
+      $("#menu-btn").on("click", function (e) {
+        e.preventDefault();
+        api.open();
+      });
+
+      $(document).on("click", ".js-mm-close", function (e) {
+        e.preventDefault();
+        api.close();
+      });
     });
+    // === jQuery MMENU E N D ===
+
 
     /* ----- Shop List Page Side Panel ----- */
     $(function() {
       // Open panel
       $(document).on('click', '.open-panel-lg', function() {
         $('.side-panel-lg').addClass('active');
-        $('.side-panel-overlay').addClass('active');
+        $('.side-panel-overlay, .shop-list3').addClass('active');
       });
 
       // Close panel on button or overlay click
       $(document).on('click', '.close-panel-lg, .side-panel-overlay', function() {
         $('.side-panel-lg').removeClass('active');
-        $('.side-panel-overlay').removeClass('active');
+        $('.side-panel-overlay, .shop-list3').removeClass('active');
       });
     });
 
@@ -350,7 +416,7 @@
         clickable: true,
       },
     });
-    var headerSlider = new Swiper('.su-product-sus-slider', {
+    var headerSlider = new Swiper('.su-product-7-slider-2', {
       slidesPerView: 1,
       spaceBetween: 24,
       loop: true,
@@ -649,7 +715,6 @@
     setupVideoControls('.video-19', '.control-video', 'fa-play-circle', 'fa-pause-circle');
     setupVideoControls('.shop-video', '.control-video1', 'fa-play', 'fa-pause');
   });
-
   
 
 
@@ -741,7 +806,6 @@
     });
     }
   };
-
 
 
     /*=============================================
@@ -2071,33 +2135,33 @@
   
   // Counter Down js 
   document.addEventListener('DOMContentLoaded', function () {
-      // Countdown script here
-      var countDownDate = new Date("Jun 5, 2026 15:37:25").getTime();
+    // Countdown script here
+    var countDownDate = new Date("Jun 5, 2026 15:37:25").getTime();
 
-      var x = setInterval(function () {
-          var presentTime = new Date().getTime();
-          var distance = countDownDate - presentTime;
+    var x = setInterval(function () {
+      var presentTime = new Date().getTime();
+      var distance = countDownDate - presentTime;
 
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-          // Update the countdown display
-          if (document.getElementById("day")) document.getElementById("day").innerHTML = days;
-          if (document.getElementById("hrs")) document.getElementById("hrs").innerHTML = hours;
-          if (document.getElementById("min")) document.getElementById("min").innerHTML = minutes;
-          if (document.getElementById("sec")) document.getElementById("sec").innerHTML = seconds;
+      // Update the countdown display
+      if (document.getElementById("day")) document.getElementById("day").innerHTML = days;
+      if (document.getElementById("hrs")) document.getElementById("hrs").innerHTML = hours;
+      if (document.getElementById("min")) document.getElementById("min").innerHTML = minutes;
+      if (document.getElementById("sec")) document.getElementById("sec").innerHTML = seconds;
 
-          // Handle countdown expiry
-          if (distance < 0) {
-              clearInterval(x);
-              if (document.getElementById("day")) document.getElementById("day").innerHTML = "EXPIRED";
-              if (document.getElementById("hrs")) document.getElementById("hrs").innerHTML = "EXPIRED";
-              if (document.getElementById("min")) document.getElementById("min").innerHTML = "EXPIRED";
-              if (document.getElementById("sec")) document.getElementById("sec").innerHTML = "EXPIRED";
-          }
-      }, 1000);
+      // Handle countdown expiry
+      if (distance < 0) {
+        clearInterval(x);
+        if (document.getElementById("day")) document.getElementById("day").innerHTML = "EXPIRED";
+        if (document.getElementById("hrs")) document.getElementById("hrs").innerHTML = "EXPIRED";
+        if (document.getElementById("min")) document.getElementById("min").innerHTML = "EXPIRED";
+        if (document.getElementById("sec")) document.getElementById("sec").innerHTML = "EXPIRED";
+      }
+    }, 1000);
   });
 
 
@@ -2199,17 +2263,21 @@
       });
     }
 
-    if ($('.cart-search-btn').length) {
-      //Show Form
-      $('.cart-search-btn').on('click', function (e) {
-        $('.search-16-wrap').addClass('show');
-      });
-      //Hide Form
-      $('.search-close-icon,.open-search-16-overlay').on('click', function (e) {
-        e.preventDefault();
-        $('.search-16-wrap').removeClass('show');
-      });
-    }
+    $(function () {
+      if ($('.cart-search-btn').length) {
+        // Show popup
+        $(document).on('click', '.cart-search-btn', function (e) {
+          e.preventDefault();
+          $('.search-16-wrap').addClass('show');
+        });
+
+        // Hide popup
+        $(document).on('click', '.search-close-icon, .open-search-16-overlay', function (e) {
+          e.preventDefault();
+          $('.search-16-wrap').removeClass('show');
+        });
+      }
+    });
 
     if ($('.signin-cart-btn').length) {
       //Show Form
@@ -2411,44 +2479,44 @@
 
     // Custom Search Dropdown Script Start
     var showSuggestions = function () {
-        $(".top-search form.form-search .box-search").each(function () {
-            $("form.form-search .box-search input").on('focus', (function () {
-                $(this).closest('.boxed').children('.overlay').css({
-                    opacity: '1',
-                    display: 'block'
-                });
-                $(this).parent('.box-search').children('.search-suggestions').css({
-                    opacity: '1',
-                    visibility: 'visible',
-                    top: '50px'
-                });
-            }));
-            $("form.form-search .box-search input").on('blur', (function () {
-                $(this).closest('.boxed').children('.overlay').css({
-                    opacity: '0',
-                    display: 'block'
-                });
-                $(this).parent('.box-search').children('.search-suggestions').css({
-                    opacity: '0',
-                    visibility: 'hidden',
-                    top: '100px'
-                });
-            }));
-        });
+      $(".top-search form.form-search .box-search").each(function () {
+        $("form.form-search .box-search input").on('focus', (function () {
+          $(this).closest('.boxed').children('.overlay').css({
+            opacity: '1',
+            display: 'block'
+          });
+          $(this).parent('.box-search').children('.search-suggestions').css({
+            opacity: '1',
+            visibility: 'visible',
+            top: '50px'
+          });
+        }));
+        $("form.form-search .box-search input").on('blur', (function () {
+          $(this).closest('.boxed').children('.overlay').css({
+            opacity: '0',
+            display: 'block'
+          });
+          $(this).parent('.box-search').children('.search-suggestions').css({
+            opacity: '0',
+            visibility: 'hidden',
+            top: '100px'
+          });
+        }));
+      });
 
-        $(".top-search.style1 form.form-search .box-search").each(function () {
-            $("form.form-search .box-search input").on('focus', (function () {
-                $(this).closest('.boxed').children('.overlay').css({
-                    opacity: '1',
-                    display: 'block'
-                });
-                $(this).parent('.box-search').children('.search-suggestions').css({
-                    opacity: '1',
-                    visibility: 'visible',
-                    top: '100px'
-                });
-            }));
-        });
+      $(".top-search.style1 form.form-search .box-search").each(function () {
+        $("form.form-search .box-search input").on('focus', (function () {
+          $(this).closest('.boxed').children('.overlay').css({
+            opacity: '1',
+            display: 'block'
+          });
+          $(this).parent('.box-search').children('.search-suggestions').css({
+            opacity: '1',
+            visibility: 'visible',
+            top: '100px'
+          });
+        }));
+      });
     }; // Toggle Location
     $(function () {
         showSuggestions();
@@ -2548,23 +2616,23 @@
     });
   });
 
-    /* ----- Scroll To top ----- */
-    function scrollToTop() {
-        var btn = $('.scrollToHome');
-        $(window).on('scroll', function () {
-            if ($(window).scrollTop() > 300) {
-                btn.addClass('show');
-            } else {
-                btn.removeClass('show');
-            }
-        });
-        btn.on('click', function (e) {
-            e.preventDefault();
-            $('html, body').animate({
-                scrollTop: 0
-            }, '300');
-        });
-    }
+  /* ----- Scroll To top ----- */
+  function scrollToTop() {
+    var btn = $('.scrollToHome');
+    $(window).on('scroll', function () {
+      if ($(window).scrollTop() > 300) {
+          btn.addClass('show');
+      } else {
+          btn.removeClass('show');
+      }
+    });
+    btn.on('click', function (e) {
+      e.preventDefault();
+      $('html, body').animate({
+          scrollTop: 0
+      }, '300');
+    });
+  }
     
 
 /* ======

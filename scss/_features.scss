@@ -1,0 +1,28 @@
+.features-area-14 {
+  padding: 22px 0;
+  @include media-breakpoint-down(xl){
+    border-top: 2px solid var(--dark-color);
+  }
+
+  .features-item-14 {
+    .title {
+      color: var(--dark-color);
+      font-family: var(--opensans-font);
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 22px;
+      letter-spacing: 0.26px;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+    }
+
+    .sub-title {
+      color: var(--dark-color);
+      font-family: var(--opensans-font);
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 22px;
+      letter-spacing: 0.26px;
+    }
+  }
+}

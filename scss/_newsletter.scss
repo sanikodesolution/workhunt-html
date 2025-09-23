@@ -1,0 +1,123 @@
+.newsletter-area {
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+
+  @include media-breakpoint-down(xl) {
+    bottom: 20px;
+    right: 20px
+  }
+
+  @include media-breakpoint-down(md) {
+    bottom: unset;
+    right: unset;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+  }
+
+  @include media-breakpoint-down(sm) {
+    width: 93%;
+  }
+
+  .newsletter-main {
+    max-width: 500px;
+    width: 100%;
+    padding: 60px;
+
+    @include media-breakpoint-down(md) {
+      max-width: 100%;
+      width: 100%;
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 60px 20px;
+    }
+  }
+
+  .close-newsletter {
+    color: var(--dark-color);
+    height: 35px;
+    width: 35px;
+    right: 20px;
+    top: 20px;
+    z-index: 1;
+  }
+
+  .title {
+    color: var(--dark-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 34px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: var(--dark-color);
+    margin-bottom: 30px;
+  }
+
+  .subscribe {
+    input {
+      width: 100%;
+      color: var(--dark-color);
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 30px;
+      text-transform: capitalize;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--gray-color);
+
+      &::placeholder {
+        opacity: 1;
+        color: var(--dark-color);
+      }
+    }
+
+    .subscribe-btn {
+      font-weight: 600;
+      font-family: var(--jakarta-font);
+    }
+  }
+
+  &.style2 {
+    background: rgba(29, 29, 29, 0.70);
+    top: 0;
+    left: 0;
+    right: unset;
+    bottom: unset;
+    padding: 12px;
+
+    @include media-breakpoint-down(md) {
+      top: 50%;
+      left: 50%;
+      width: 100%;
+    }
+
+    .newsletter-main {
+      max-width: 840px;
+      width: 100%;
+      padding: 0;
+
+      .image {
+        max-width: 400px;
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+
+      .text {
+        padding: 50px 60px;
+
+        @include media-breakpoint-down(lg) {
+          padding: 30px 20px;
+        }
+      }
+    }
+  }
+
+  &.remove {
+    display: none !important;
+  }
+}

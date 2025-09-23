@@ -1,0 +1,81 @@
+/***  Header Top  ***/
+
+/*  home 4 style header top  */
+.su-header-4-top{
+	padding: 5px 0px;
+	.discount{
+		p{
+			font-weight: 500;
+			font-size: 12px;
+			letter-spacing: 0.02em;
+			color: var(--text-white);
+			a{
+				text-decoration: underline;
+				color: var(--text-white);
+				margin-left: 5px;
+		        @include su-transition(all 0.4s ease);
+			}
+		}
+	}
+	&.home16-style{
+		.discount{
+			p{
+				color: var(--text-white);
+				font-family: var(--montserrat-font);
+				font-size: 10px;
+				font-style: normal;
+				font-weight: 500;
+				letter-spacing: none;
+				line-height: 12px;
+				a{
+					text-decoration: underline;
+					color: var(--text-white);
+					margin-left: 5px;
+			        @include su-transition(all 0.4s ease);
+				}
+			}
+		}
+	}
+	&.home22-style{
+		.discount{
+			.text{
+				color: var(--text-white);
+				font-size: 12px;
+				font-style: normal;
+				line-height: 24px;
+				font-weight: 400;
+				text-transform: uppercase;
+				a{
+					text-decoration: underline;
+					color: var(--text-white);
+					margin-left: 5px;
+	        @include su-transition(all 0.4s ease);
+				}
+			}
+		}
+	}
+}
+.su-header-7-top{
+	padding: 9px 0px;
+}
+.su-header-7-menu-wrap{
+	display: flex; 
+	justify-content: center;
+	align-items: center;
+}
+.home17-header-top{
+	background-color: var(--theme-color38);
+	position: relative;
+}
+.home18-header-top{
+	background-color: var(--theme-color36);
+	position: relative;
+	.text{
+		font-family: 'Jost';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 17px;
+		letter-spacing: 0.03em;
+	}
+}

@@ -152,6 +152,42 @@
   letter-spacing: 0.02em;
   line-height: 24px;
 }
+@mixin sec-title1 {
+  color: var(--headings-color);
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  line-height: 38px;
+}
+@mixin title-typo1 {
+  color: var(--headings-color);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+}
+@mixin shop-typo1 {
+  color: var(--headings-color);
+  font-size: 12px;
+  letter-spacing: 0.02em;
+}
+@mixin shop-typo2 {
+  color: var(--headings-color);
+  font-weight: var(--font-weight-600);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+@mixin shop-typo3 {
+  color: var(--text-color);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+@mixin timer-text-typo1 {
+  color: var(--text-white);
+  font-style: normal;
+  font-weight: var(--font-weight-600);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
 @mixin form-lebel-typo {
   color: var(--text-color);
   font-style: normal;
@@ -159,6 +195,38 @@
   font-size: 12px;
   letter-spacing: 0.02em;
   line-height: 22px;
+}
+@mixin shop-tag-list-typo1 {
+  color: var(--text-white);
+  display: table;
+  font-weight: var(--font-weight-600);
+  font-size: 11px;
+  line-height: 24px;
+  margin-bottom: 5px;
+  padding: 0px 12px;
+}
+@mixin tiny-title11 {
+  color: var(--dark-color);
+  font-weight: var(--font-weight-600);
+  font-size: 11px;
+  line-height: 14px;
+  letter-spacing: 0.02em;
+}
+@mixin tiny-title14 {
+  color: var(--dark-color);
+  font-weight: var(--font-weight-500);
+  font-size: 14px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+}
+@mixin footer-link-title {
+  font-weight: var(--font-weight-600);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+@mixin footer-link-typo1 {
+  font-weight: var(--font-weight-400);
+  font-size: 13px;
 }
 @mixin swiper-Slide-TZ {
   transform: translateZ(0);
@@ -170,7 +238,15 @@
   overflow: hidden;
   width: 100%;
   height: 100%;
-  transition-property: transform;
+  transition-property: transform;  
+}
+@mixin footer-link-typo2 {
+  font-weight: var(--font-weight-400);
+  font-size: 12px;
+}
+@mixin footer-link-typo3 {
+  font-weight: var(--font-weight-400);
+  font-size: 15px;
 }
 // Responsive Font Size
 @mixin responsive-font($min, $preferred, $max, $line-height: 1.5) {

@@ -220,10 +220,14 @@
 }
 
 
+ 
+
+
+
 //  Animation
 
 
-/*  img-animation  **********************/
+/*img-animation**********************/
 .img-custom-anim-right {
 	animation: img-anim-right 1.3s forwards cubic-bezier(0.645, 0.045, 0.355, 1) 0.4s;
 	opacity: 0;
@@ -296,6 +300,8 @@
 		transform: translateY(-10px);
 	}
 }
+
+
 
 .gsap__parallax {
 	overflow: hidden;

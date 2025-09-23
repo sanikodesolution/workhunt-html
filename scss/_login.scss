@@ -1,0 +1,151 @@
+/***  Footer  ***/
+.hiddenbar-body-ovelay {
+    background: rgba(29,29,29,0.7);
+    height: 100%;
+    opacity: 0;
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    visibility: hidden;
+    z-index: 99;
+    @include transition(0.5s);
+}
+.signin-hidden-sidebar-content .signin-hidden-sbar-4 {
+  opacity: 1;
+  right: 0px;
+  visibility: visible;
+}
+.signin-hidden-sidebar-content .hiddenbar-body-ovelay{
+  opacity: 1;
+  visibility: visible;
+}
+.signin-hidden-sbar-4{
+    padding: 34px 40px 40px 40px;
+    width: 500px;
+    background-color: var(--white-color);
+    height: 100%;
+    overflow-y: auto;
+    position: fixed;
+    right: -510px;
+    top: 0px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    @include transition(0.5s);
+    @include media-breakpoint-down(sm) {
+        width: 340px;
+    }
+    @media (max-width: 320px) {
+        padding: 30px 20px;
+        width: 320px;
+    }
+    .title{
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: var(--dark-color);
+    }
+    .sidebar-close-icon{
+        border-radius: 8px;
+        cursor: pointer;
+        color: #041E42;
+        font-size: 10px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        width: 40px;
+        @include su-transition(.5s);
+        font-size: 20px;
+        &:hover{
+            background-color: #F3F5F6;
+        }
+    }
+    .login_form{
+        .text{
+            color: var(--dark-color);
+            font-family: var(--jakarta-font);
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 0.02em;
+            line-height: 24px;
+        }
+        .form-label{
+            color: var(--text-color);
+            font-family: var(--jakarta-font);
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 22px;
+            letter-spacing: 0.02em;
+        }
+        .form-control{
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid  #e6e6e6;
+            border-radius: 0;
+            color: var(--dark-color);
+            font-family: var(--jakarta-font);
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            padding: 0;
+            padding-bottom: 10px;
+            @include su-placeholder{
+                color: var(--text-color);
+                font-size: 13px;
+                font-weight: 500;
+                letter-spacing: 0.02em;
+            }
+        }
+        .form-control:focus{
+            box-shadow: none;
+            border-color: var(--dark-color);
+            @include su-placeholder{
+                color: var(--dark-color); 
+            }
+        }
+        .custom-control.custom-checkbox [type="checkbox"], [type="radio"]{
+            border: 1px solid var(--dark-color);
+            border-radius: 0;
+            height: 16px;
+            outline: none;
+            width: 16px;
+            vertical-align: sub;
+        }
+        .custom-control-label {
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 185%;
+            letter-spacing: 0.02em;
+            color: var(--text-color);
+        }
+        .btn-fpswd {
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 0.02em;
+            color: var(--text-color);
+            text-transform: uppercase;
+        }
+        .tn-log{
+            padding: 16px 35px;
+            background: var(--dark-color);
+            width: 100%;
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 0.02em;
+            color: var(--white-color);
+            border: none;
+        }
+        .text-2{
+            font-weight: 500;
+            font-size: 13px;
+            letter-spacing: 0.02em;
+            color: var(--text-color);
+            a{
+                color: var(--dark-color);
+                text-decoration: underline;
+                text-decoration-skip-ink: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+
+/*
+ * collections.scss
+ * -----------------------------------------------
+*/
+
+
+.su-fashion-4-thumb{
+    margin-bottom: 4px;
+    img{
+        @include transition(.6s);
+    }
+    &:hover{
+        img{
+            transform: scale(1.1);
+        }
+    }
+}
+.su-fashion-4-content{
+    padding: 0px 50px;
+    @media (max-width: 1600px) {
+        padding: 0px 20px;
+    }
+    @media (max-width: 1400px) {
+        padding: 0px 10px;
+    }
+    .title{
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: var(--dark-color);
+    }
+    .text{
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        text-transform: capitalize;
+        color: var(--dark-color);
+    }
+}
+
+.su-fashion-5-icon{
+    border: 1px solid #e6e6e6;
+    .su-fashion-4-content{
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+}

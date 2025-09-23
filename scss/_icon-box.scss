@@ -1,0 +1,52 @@
+/*
+ * Instagram Feed 
+ * -----------------------------------------------
+*/
+
+.icon-box-home1{
+    position: relative;
+    .icon{
+        font-size: 45px;
+        margin-bottom: 25px;
+        @include transition(.3s);
+    }
+    .title{
+        font-family: var(--headings-font);
+        line-height: var(--line-height-heading2);
+        margin-bottom: 10px;
+    }
+    .text{
+        font-family: var(--headings-font);
+        font-size: var(--font-size-14);
+        font-weight: var(--font-weight-500);
+        line-height: 28px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    &:hover{
+        .icon{
+            transform: rotateY(180deg);
+        }
+    }
+    &.home5-style{
+        padding: 60px 0 50px;
+        @include media-breakpoint-down(lg) {
+            padding: 30px 0;
+        }
+    }
+    &.home16-style{
+        .text,
+        .title{
+            font-family: var(--montserrat-font);
+        }
+    }
+    &.home18-style{
+        .text,
+        .title{
+            font-family: var(--jost-font);
+        }
+        .title{
+            font-weight: 500;
+        }
+    }
+}

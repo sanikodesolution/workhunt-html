@@ -4,3 +4,83 @@
  * -----------------------------------------------
 */
 
+.black-bg{
+    background: var(--dark-color);
+}
+.check-style{
+    background-image: url(../images/shop/check.png);
+    background-size: cover;
+    background-position:  center center;
+}
+.bleached-linen-bg{
+    background: var(--bleached-linen);
+}
+.grey-bg{
+    background: #faf5f1;
+}
+.grey-bg-2{
+    background: var(--text-gray-2);
+}
+.bg-light-green {
+    background-color: #caffd6;
+}
+.bg-green {
+    background-color: var(--green-color);
+}
+.theme-color7{
+    background: var(--theme-color7);
+}
+.lime-bg{
+    background: #d2f2b2;
+}
+.black-bg {
+  background-color: var(--dark-color);
+}
+.top-header-bg {
+  background-color: var(--top-bg);
+}
+.sec-bg24 {
+  background-color: var(--sec-bg-24);
+}
+.sec-bg25 {
+  background-color: var(--sec-bg-25);
+}
+.sec-bg25_2 {
+  background-color: var(--sec-bg-25_2);
+}
+.sec-bg25_3 {
+  background-color: var(--sec-bg-25_3);
+}
+.sec-bg25_4 {
+  background-color: var(--sec-bg-25_4);
+}
+.ptb-50px {
+  padding: 50px 0;
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
+  }
+}
+.pt-50px {
+  padding-top: 50px;
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
+  }
+}
+.pb-50px {
+  padding-top: 50px;
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
+  }
+}
+.pt-60px {
+  padding-top: 60px;
+  @include media-breakpoint-down(md) {
+    padding-top: 0;
+  }
+}
+.pb-50px {
+  padding-bottom: 50px;
+}
+img {
+  max-width: 100%;
+}

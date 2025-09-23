@@ -1,0 +1,164 @@
+// home layout 5 category item
+.category-container{
+  position: relative;
+  overflow-x: auto;
+}
+// categories 12 style
+.categories-area {
+  .categories-item {
+    .img {
+      img {
+        @include transition(0.4s);
+      }
+    }
+
+    .overlay {
+      background: rgba($theme-color-black, 0.2);
+      padding: 60px;
+
+      @include media-breakpoint-down(sm) {
+        padding: 30px;
+      }
+
+      .text {
+        .title {
+          color: var(--white-color);
+          font-family: var(--dmsans-font);
+          font-size: 36px;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 1.08px;
+
+          @include media-breakpoint-down(sm) {
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    &:hover {
+      .img {
+        img {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  &.categories-6-area {
+    .categories-item {
+      .overlay {
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.40) 100%);
+        padding: 40px;
+        @include media-breakpoint-down(md){
+          padding: 22px;
+        }
+        .text {
+          .title {
+            color: var(--white-color);
+            font-family: var(--jakarta-font);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 28px;
+            text-transform: uppercase;
+          }
+          .price {
+            color: var(--white-color);
+            font-family: var(--jakarta-font);
+            font-size: 40px;
+            font-weight: 500;
+            line-height: normal;
+            letter-spacing: 1.2px;
+            padding: 15px 0;
+            @include media-breakpoint-down(md){
+              padding: 0px 0;
+            }
+            .off {
+              font-size: 16px;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// home categories 2 css
+.shop-category-area {
+  padding: 180px 0;
+  ul {
+    gap: 50px;
+    row-gap: 30px;
+    @include media-breakpoint-down(xl) {
+      row-gap: 15px;
+    }
+    li {
+      a {
+        color: var(--dark-color);
+        font-family: var(--marcellus-font);
+        font-size: 45px;
+        font-weight: 400;
+        line-height: 46px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        text-transform: lowercase;
+        display: flex;
+        align-items: center;
+        @include media-breakpoint-down(xxl) {
+          font-size: 36px;
+        }
+        @include media-breakpoint-down(md) {
+          font-size: 28px;
+        }
+        @include media-breakpoint-down(sm) {
+          flex-direction: column;
+          text-align: center;
+          gap: 15px;
+        }
+        img {
+          width: 80px;
+          height: 80px;
+          @include media-breakpoint-down(xl) {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+  &.category-6 {
+    ul {
+      row-gap: 40px;
+      flex-wrap: wrap;
+      @include media-breakpoint-down(xl) {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        position: relative;
+      }
+      li {
+        width: 22%;
+        @include media-breakpoint-down(xxl) {
+          width: auto;
+        }
+        a {
+          gap: 20px;
+          font-family: var(--jakarta-font);
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 28px;
+          text-transform: uppercase;
+          flex-direction: row;
+          @include media-breakpoint-down(xl) {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 20px;
+          }
+          @include media-breakpoint-down(sm) {
+            gap: 10px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

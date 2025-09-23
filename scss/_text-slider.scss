@@ -1,0 +1,41 @@
+.text-slider {
+  .swiper-slide {
+    .title {
+      gap: 84px;
+      color: var(--dark-color);
+      font-family: var(--dmsans-font);
+      font-size: 100px;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 70px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 60px;
+      }
+    }
+
+    &:nth-child(odd) {
+      .title {
+        -webkit-text-stroke: 1px var(--dark-color);
+        color: transparent;
+      }
+    }
+  }
+
+  &.style2 {
+    .swiper-slide {
+      .title {
+        font-family: var(--jakarta-font);
+        font-weight: 600;
+        font-size: 60px;
+        line-height: normal;
+        letter-spacing: 1.8px;
+      }
+    }
+  }
+}

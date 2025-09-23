@@ -27,7 +27,7 @@
   font-family: var(--body-font);
 }
 body {
-  background-color:var(--gray-color);
+  background-color:var(--text-white);
   color: var(--text-color);
   font-family: var(--body-font);
   font-size:14px;
@@ -79,23 +79,11 @@ li {
   margin: 0px;
   padding: 0px;
 }
-/* Job title */
-
-
-
-font-family: 'SUSE';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 29px;
-/* or 121% */
-
-color: #151517;
-
 
 h1, h2, h3, h4, h5, h6 {
   color: var(--headings-color);
   font-family: var(--title-font);
+  letter-spacing: -.03em;
   line-height: 1.2em;
   margin:0px;
   position:relative;

@@ -1,3 +1,14 @@
+body{
+    &.home2-type{
+        font-family: var(--jakarta-font);
+        h1,h2,h3{
+            font-family: var(--marcellus-font);
+        }
+        .su-menu-4 > nav > ul > li > a{
+            font-weight: normal;
+        }
+    }
+}
 .bg-position {
     background-position: center;
     background-size: cover;
@@ -7,9 +18,35 @@ img{
     max-width: 100%;
 }
 
+.gx-4{
+    --bs-gutter-x: 4px;
+}
+.gx-7{
+    --bs-gutter-x: 7px;
+}
+.gx-10{
+    --bs-gutter-x: 10px;
+}
+.gx-15{
+    --bs-gutter-x: 15px;
+}
+.gx-20{
+    --bs-gutter-x: 20px;
+}
+.gx-27{
+    --bs-gutter-x: 27px;
+}
+.su-transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
 
 // custom-container-here
-$container:(1830, 1630, 1760, 1650, 1430, 1230, 548);
+$container:(1830, 1630, 1760, 1650, 1464, 1430, 1230, 548);
 
 @each $number in $container{
 	@media (min-width:1400px) {

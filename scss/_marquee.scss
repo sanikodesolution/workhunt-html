@@ -1,0 +1,102 @@
+.scrolling-wrap {
+    &.home1 {
+        background-color: var(--dark-color);
+        display: flex;
+        gap: 40px;
+        overflow: hidden;
+        position: relative;
+        padding: 50px 0;
+        white-space: nowrap;
+        .comm {
+            display: flex;
+            align-items: center;
+            animation: scroll 20s linear infinite;
+            gap: 100px;
+            cursor: pointer;
+            .cmn-textslide {
+                color: var(--white-color);
+                font-weight: 600;
+                font-size: 13px;
+                line-height: 16px;
+                letter-spacing: 0.02em;
+            }
+        }
+    }
+    &.style23 {
+        background-color: transparent;
+        display: flex;
+        gap: 40px;
+        overflow: hidden;
+        position: relative;
+        padding: 50px 0;
+        white-space: nowrap;
+        .comm {
+            display: flex;
+            align-items: center;
+            animation: scroll 60s linear infinite;
+            gap: 40px;
+            cursor: pointer;
+            .cmn-textslide {
+                color: transparent;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: var(--dark-color);
+                letter-spacing: 0.02em;
+                @include responsive-font(30px, 3.12vw, 50px, 1.26);
+                @include transition(0.4s);
+                &:hover{
+                    color: var(--dark-color);
+                }
+            }
+            .marque-icon {
+                position: relative;
+                width: 60px;
+            }
+        }
+    }
+    &.style24 {
+        background-color: transparent;
+        display: flex;
+        gap: 40px;
+        overflow: hidden;
+        position: relative;
+        padding: 50px 0;
+        white-space: nowrap;
+        .comm {
+            display: flex;
+            align-items: center;
+            animation: scroll 60s linear infinite;
+            gap: 40px;
+            cursor: pointer;
+            .cmn-textslide {
+                color: transparent;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: var(--theme-color42);
+                letter-spacing: 0.02em;
+                font-weight: 400;
+                @include responsive-font(40px, 5vw, 80px, 1.45);
+                @include transition(0.4s);
+                text-transform: uppercase;
+                &:hover{
+                    color: var(--theme-color42);
+                }
+            }
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@keyframes scroll2 {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-200%);
+    }
+}
