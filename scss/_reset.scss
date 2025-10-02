@@ -20,22 +20,21 @@ Reset
 
 ::selection {
   background: var(--theme-color1);
-  color: #fff;
+  color: var(--text-white);
   text-shadow: none;
 }
 
 ::-moz-selection {
   background: #333; /* Firefox */
-  color: #fff;
+  color: var(--text-white);
   text-shadow: none;
 }
 
 ::-webkit-selection {
   background: #333; /* Safari */
-  color: #fff;
+  color: var(--text-white);
   text-shadow: none;
 }
-
 :active,
 :focus { outline: none !important; }
 
@@ -44,21 +43,21 @@ section{
 }
 
 /*=======================
-    Preloader
-    =======================*/
+  Preloader
+  =======================*/
 
-    .preloader {
-      background-color: #eaeaea;
-      background-image: url("../images/preloader.gif");
-      background-position: center center;
-      background-repeat: no-repeat;
-      height: 100%;
-      left: 0px;
-      position: fixed;
-      top: 0px;
-      width: 100%;
-      z-index: 99999;
-    }
+  .preloader {
+    background-color: #eaeaea;
+    background-image: url("../images/preloader.gif");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    left: 0px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 99999;
+  }
 
 
 /*=======================
@@ -124,31 +123,34 @@ Scroll To Top style
 .text-dark2{
   color: var(--dark-color2);
 }
-.text-dark3{
-  color: var(--dark-color3);
-}
-.text-dark4{
-  color: var(--dark-color4);
-}
-.text-dark5{
-  color: var(--dark-color5);
-}
-.text-dark6{
-  color: var(--dark-color6);
-}
 .text-thm1{
   color: var(--theme-color1);
 }
 .text-thm2{
   color: var(--theme-color2);
 }
+.text-thm3{
+  color: var(--theme-color3);
+}
+.text-thm4{
+  color: var(--theme-color4);
+}
+.text-thm5{
+  color: var(--theme-color5);
+}
+.text-thm6{
+  color: var(--theme-color6);
+}
+.text-thm7{
+  color: var(--theme-color7);
+}
 
 /*=== Theme Color Text ===*/
 .bgc-text-color{
   background-color: var(--text-color);
 }
-.bgc-white-smoke{
-  background-color: var(--white-smoke);
+.bgc-gray{
+  background-color: var(--gray-color);
 }
 .bgc-dark{
   background-color: var(--dark-color);
@@ -165,6 +167,21 @@ Scroll To Top style
 }
 .bgc-thm2{
   background-color: var(--theme-color2);
+}
+.bgc-thm3{
+  background-color: var(--theme-color3);
+}
+.bgc-thm4{
+  background-color: var(--theme-color4);
+}
+.bgc-thm5{
+  background-color: var(--theme-color5);
+}
+.bgc-thm6{
+  background-color: var(--theme-color6);
+}
+.bgc-thm7{
+  background-color: var(--theme-color7);
 }
 /*=== List Of Font Family ===*/
 .jakarta-font{

@@ -243,9 +243,15 @@ img {
 :root {
   --theme-color1: #F56300;
   --theme-color2: #0BB289;
+  --theme-color3: #56ABFF;
+  --theme-color4: #8330C2;
+  --theme-color5: #FF8646;
+  --theme-color6: #11AB8B;
+  --theme-color7: #0176EA;
   --body-color: #545454;
   --light-gray: #EAEAEA;
-  --gray-color: #E6E6E6;
+  --bluish-gray: #F2F2F9;
+  --gray-color: #8b8b8b;
   --dark-color: #151517;
   --dark-color2: #352F27;
   --black-color: #000000;
@@ -287,12 +293,12 @@ img {
   --h4-font-size: 24px;
   --h5-font-size: 20px;
   --h6-font-size: 16px;
-  --h1-font-weight: 600;
-  --h2-font-weight: 600;
-  --h3-font-weight: 600;
-  --h4-font-weight: 600;
-  --h5-font-weight: 600;
-  --h6-font-weight: 600;
+  --h1-font-weight: 700;
+  --h2-font-weight: 700;
+  --h3-font-weight: 700;
+  --h4-font-weight: 700;
+  --h5-font-weight: 700;
+  --h6-font-weight: 700;
   --sec-title-color: var(--headings-color);
   --sec-title-font-size: var(--h2-font-size);
   --sec-title-font-family: var(--title-font);
@@ -343,7 +349,7 @@ img {
 }
 
 body {
-  background-color: var(--text-white);
+  background-color: var(--bluish-gray);
   color: var(--text-color);
   font-family: var(--body-font);
   font-size: 14px;
@@ -1508,25 +1514,25 @@ Reset
 
 ::-moz-selection {
   background: var(--theme-color1);
-  color: #fff;
+  color: var(--text-white);
   text-shadow: none;
 }
 
 ::selection {
   background: var(--theme-color1);
-  color: #fff;
+  color: var(--text-white);
   text-shadow: none;
 }
 
 ::-moz-selection {
   background: #333; /* Firefox */
-  color: #fff;
+  color: var(--text-white);
   text-shadow: none;
 }
 
 ::-webkit-selection {
   background: #333; /* Safari */
-  color: #fff;
+  color: var(--text-white);
   text-shadow: none;
 }
 
@@ -1540,8 +1546,8 @@ section {
 }
 
 /*=======================
-    Preloader
-    =======================*/
+  Preloader
+  =======================*/
 .preloader {
   background-color: #eaeaea;
   background-image: url("../images/preloader.gif");
@@ -1615,22 +1621,6 @@ Scroll To Top style
   color: var(--dark-color2);
 }
 
-.text-dark3 {
-  color: var(--dark-color3);
-}
-
-.text-dark4 {
-  color: var(--dark-color4);
-}
-
-.text-dark5 {
-  color: var(--dark-color5);
-}
-
-.text-dark6 {
-  color: var(--dark-color6);
-}
-
 .text-thm1 {
   color: var(--theme-color1);
 }
@@ -1639,13 +1629,33 @@ Scroll To Top style
   color: var(--theme-color2);
 }
 
+.text-thm3 {
+  color: var(--theme-color3);
+}
+
+.text-thm4 {
+  color: var(--theme-color4);
+}
+
+.text-thm5 {
+  color: var(--theme-color5);
+}
+
+.text-thm6 {
+  color: var(--theme-color6);
+}
+
+.text-thm7 {
+  color: var(--theme-color7);
+}
+
 /*=== Theme Color Text ===*/
 .bgc-text-color {
   background-color: var(--text-color);
 }
 
-.bgc-white-smoke {
-  background-color: var(--white-smoke);
+.bgc-gray {
+  background-color: var(--gray-color);
 }
 
 .bgc-dark {
@@ -1667,6 +1677,26 @@ Scroll To Top style
 
 .bgc-thm2 {
   background-color: var(--theme-color2);
+}
+
+.bgc-thm3 {
+  background-color: var(--theme-color3);
+}
+
+.bgc-thm4 {
+  background-color: var(--theme-color4);
+}
+
+.bgc-thm5 {
+  background-color: var(--theme-color5);
+}
+
+.bgc-thm6 {
+  background-color: var(--theme-color6);
+}
+
+.bgc-thm7 {
+  background-color: var(--theme-color7);
 }
 
 /*=== List Of Font Family ===*/
@@ -4125,10 +4155,6 @@ header.header-nav {
   }
 }
 /*  Job Box Style One  */
-.latest-job {
-  background-color: #F2F2F9;
-}
-
 .job-box .inner-box {
   background-color: #fff;
   border: 1px solid #F2F2F9;
@@ -4155,7 +4181,7 @@ header.header-nav {
           justify-content: space-between;
   margin-bottom: 10px;
 }
-.job-box .icon {
+.job-box .jb-header .icon {
   border: 1px solid #D5D5D5;
   border-radius: 8px;
   height: 65px;
@@ -4163,12 +4189,9 @@ header.header-nav {
   text-align: center;
   width: 65px;
 }
-.job-box .job-tag {
-  background-color: #0176EA;
+.job-box .jb-header .job-tag {
   border-radius: 4px;
-  color: #FFFFFF;
-  font-family: var(--suse-font);
-  font-style: normal;
+  color: var(--text-white);
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 0.555556px;
@@ -4176,13 +4199,7 @@ header.header-nav {
   padding: 4px 10px;
   text-align: center;
 }
-.job-box .job-tag.style2 {
-  background-color: #8B8B8B;
-}
 .job-box .title {
-  font-family: var(--suse-font);
-  font-style: normal;
-  font-weight: 700;
   line-height: 29px;
   margin-bottom: 20px;
 }
@@ -4190,8 +4207,6 @@ header.header-nav {
   color: var(--dark-color);
 }
 .job-box .jb-meta li {
-  color: var(--text-color);
-  font-family: var(--suse-font);
   font-size: 14px;
   font-weight: 600;
 }

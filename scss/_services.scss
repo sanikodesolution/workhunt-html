@@ -1,71 +1,4 @@
 /*  Job Box Style One  */
-.latest-job{
-  background-color: #F2F2F9;
-}
-// .job-box{
-//   .inner-box{
-//     background-color: #fff;
-//     border: 1px solid #F2F2F9;
-//     border-radius: 24px;
-//     margin-bottom: 40px;
-//     padding: 30px;
-//     position: relative;
-//     transition: all ease 400ms;
-//     &:hover{
-//       box-shadow: 0px 5px 16px rgba(198, 198, 198, 0.593883);
-//     }
-//   }
-//   .jb-header{
-//     align-items: start;
-//     display: flex;
-//     justify-content: space-between;
-//     margin-bottom: 10px;
-//     .icon{
-//       border: 1px solid #D5D5D5;
-//       border-radius: 8px;
-//       height: 65px;
-//       line-height: 65px;
-//       text-align: center;
-//       width: 65px;
-//     }
-//     .job-tag{
-//       background-color: #0176EA;
-//       border-radius: 4px;
-//       color: #FFFFFF;
-//       font-family: var(--suse-font);
-//       font-style: normal;
-//       font-weight: 600;
-//       font-size: 14px;
-//       letter-spacing: 0.555556px;
-//       line-height: 18px;
-//       padding: 4px 10px;
-//       text-align: center;
-//       &.style2{
-//         background-color: #8B8B8B;
-//       }
-//     }
-//   }
-//   .title {
-//     color: #151517;
-//     font-family: var(--suse-font);
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 24px;
-//     line-height: 29px;
-//     margin-bottom: 20px;
-//     a{
-//       color: #151517;
-//     }
-//   }
-//   .jb-meta li{
-//     color: #545454;
-//     font-family: var(--suse-font);
-//     font-size: 14px;
-//     font-weight: 600;
-//   }
-// }
-
-
 .job-box{
   .inner-box{
     background-color: #fff;
@@ -84,35 +17,26 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 10px;
-  }
-  .icon{
-    border: 1px solid #D5D5D5;
-    border-radius: 8px;
-    height: 65px;
-    line-height: 65px;
-    text-align: center;
-    width: 65px;
-  }
-  .job-tag{
-    background-color: #0176EA;
-    border-radius: 4px;
-    color: #FFFFFF;
-    font-family: var(--suse-font);
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    letter-spacing: 0.555556px;
-    line-height: 18px;
-    padding: 4px 10px;
-    text-align: center;
-    &.style2{
-      background-color: #8B8B8B;
+    .icon{
+      border: 1px solid #D5D5D5;
+      border-radius: 8px;
+      height: 65px;
+      line-height: 65px;
+      text-align: center;
+      width: 65px;
+    }
+    .job-tag{
+      border-radius: 4px;
+      color: var(--text-white);
+      font-weight: 600;
+      font-size: 14px;
+      letter-spacing: 0.555556px;
+      line-height: 18px;
+      padding: 4px 10px;
+      text-align: center;
     }
   }
-  .title{
-    font-family: var(--suse-font);
-    font-style: normal;
-    font-weight: 700;
+  .title {
     line-height: 29px;
     margin-bottom: 20px;
     a{
@@ -120,8 +44,6 @@
     }
   }
   .jb-meta li{
-    color: var(--text-color);
-    font-family: var(--suse-font);
     font-size: 14px;
     font-weight: 600;
   }
