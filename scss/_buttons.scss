@@ -1,0 +1,28 @@
+.btn-style-one {
+  align-items: center;
+  background-size: 300%;
+  border-radius: 4px;
+  border: 1px solid var(--theme-color1);
+  color: var(--text-white);
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.7px;
+  line-height: 18px;
+  max-width: 150px;
+  padding: 1rem 2rem;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.6s;
+}
+.btn-style-one:hover {
+  background-position: 100%;
+  border: 1px solid var(--black-color);
+  color: var(--text-white);
+}
+.theme-color1{
+  color: var(--text-white);
+  background-image: linear-gradient(160deg, var(--theme-color1) 50%, var(--black-color) 50%);
+}

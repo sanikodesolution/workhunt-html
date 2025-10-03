@@ -47,4 +47,21 @@
     font-size: 14px;
     font-weight: 600;
   }
+  &.style2{
+    .inner-box{
+      background-color: transparent;
+      &:hover{
+        box-shadow: none;
+      }
+    }
+    .title{
+      line-height: 36px;
+      letter-spacing: 0.4px;
+    }
+    .text{
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+    }
+  }
 }

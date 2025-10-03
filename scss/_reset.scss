@@ -184,9 +184,7 @@ Scroll To Top style
   background-color: var(--theme-color7);
 }
 /*=== List Of Font Family ===*/
-.jakarta-font{
-  font-family: var(--jakarta-font);
-}
+
 .pt165{
   @media #{$sm,$xs} {
     padding-top: 125px;
@@ -305,9 +303,6 @@ Scroll To Top style
   font-weight: var(--font-weight-500);
   line-height: 28px;
 }
-.tiny-title11{
-  @include tiny-title11;
-}
 .cursor-pointer{
   cursor: pointer;
 }
@@ -329,37 +324,6 @@ Scroll To Top style
   width: 100%;
   height: 3px;
   background: var(--text-gray-2);
-}
-.home17-style{
-  .navigation{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .swiper-scrollbar,
-  .swiper-scrollbar-2,
-  .swiper-scrollbar-3{
-    background: var(--text-gray-2);
-    height: 3px;
-    margin-left: 60px;
-    margin-right: 60px;
-    width: 93%;
-    @include media-breakpoint-down(sm) {
-      margin-left: 10px;
-      margin-right: 10px;
-      width: 100%;
-    }
-  }
-  .swiper-scrollbar-2,
-  .swiper-scrollbar-3{
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 100%;
-  }
-  .swiper-scrollbar-drag{
-    background-color: var(--dark-color5);
-    border-radius: 0;
-  }
 }
 .navigation{
   &.dark-style{
