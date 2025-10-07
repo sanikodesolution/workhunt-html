@@ -1,103 +1,102 @@
 /*
  * button.scss
  * -----------------------------------------------
-*/
+ */
 
-.su-btn-4{
-    background: var(--white-color);
-    padding: 20px 36px;
-    font-weight: var(--font-weight-600);
-    font-size: 13px;
-    line-height: 1;
-    letter-spacing: 0.02em;
+ .text-btn{
+  color: var(--dark-color);
+  display: inline-block;
+  font-size: 12px;
+  font-weight: var(--font-weight-700);
+  line-height: 15px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  @include transition(.4s);
+  &:hover{
     color: var(--dark-color);
-    display: inline-block;
-    @include transition(.4s);
-    &:hover{
-        color: var(--dark-color);
-    }
-    &.dark-border1{
-        border: 1px solid var(--dark-color);
-    }
+  }
+  &.dark-border1{
+    border: 1px solid var(--dark-color);
+  }
 }
 .su-btn-4-black{
-    font-weight: var(--font-weight-600);
-    font-size: 13px;
-    line-height: 1;
-    letter-spacing: 0.02em;
+  font-weight: var(--font-weight-600);
+  font-size: 13px;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+  display: inline-block;
+  &:hover{
     color: var(--dark-color);
-    display: inline-block;
-    &:hover{
-        color: var(--dark-color);
-    }
+  }
 }
 .su-btn-4-border{
-    background-color: transparent;
+  background-color: transparent;
+  color: var(--white-color);
+  border: 1px solid var(--white-color);
+  &:hover{
     color: var(--white-color);
-    border: 1px solid var(--white-color);
-    &:hover{
-        color: var(--white-color);
-    }
+  }
 }
 .su-btn-5{
-    background: var(--theme-color7);
+  background: var(--theme-color7);
+  color: var(--white-color);
+  &:hover{
     color: var(--white-color);
-    &:hover{
-        color: var(--white-color);
-    }
+  }
 }
 .su-btn-5-black{
-    color:  var(--white-color);
-    &:hover{
-        color: var(--white-color);
-    }
+  color:  var(--white-color);
+  &:hover{
+    color: var(--white-color);
+  }
 }
 .su-btn-7{
-    background: transparent;
-    border: 1px solid var(--dark-color);
+  background: transparent;
+  border: 1px solid var(--dark-color);
 }
 .su-btn-7-black{
-    background:var(--dark-color);
+  background:var(--dark-color);
+  color: var(--white-color);
+  &:hover{
     color: var(--white-color);
-    &:hover{
-        color: var(--white-color);
-    }
+  }
 }
 .su-btn-8{
+  color: var(--white-color);
+  font-weight: 600;
+  backdrop-filter: blur(50px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid  var(--white-color);
+  border-radius: 12px;
+  &:hover{
     color: var(--white-color);
-    font-weight: 600;
-    backdrop-filter: blur(50px);
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid  var(--white-color);
-    border-radius: 12px;
-    &:hover{
-        color: var(--white-color);
-    }
+  }
 }
 .su-btn-8-black{
-    border-color: var(--dark-color);
+  border-color: var(--dark-color);
+  color: var(--dark-color);
+  &:hover{
     color: var(--dark-color);
-    &:hover{
-        color: var(--dark-color);
-    }
+  }
 }
 .su-btn-9 {
-    background: rgba($theme-color-white, 0.10);
-    backdrop-filter: blur(25px);
-    border: 1px solid var(--white-color);
+  background: rgba($theme-color-white, 0.10);
+  backdrop-filter: blur(25px);
+  border: 1px solid var(--white-color);
 }
 .su-btn-16-black{
-    background: var(--dark-color) !important;
+  background: var(--dark-color) !important;
+  color: var(--white-color) !important;
+  &:hover{
     color: var(--white-color) !important;
-    &:hover{
-        color: var(--white-color) !important;
-    }
+  }
 }
 
 .su-btn-16-border-dark{
-   border: 1px solid var(--dark-color);
+ border: 1px solid var(--dark-color);
 }
 
 .btn-black-border{
-    border: 1px solid var(--theme-color10);
+  border: 1px solid var(--theme-color10);
 }

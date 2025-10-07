@@ -14,10 +14,11 @@ $theme-color7: #0176EA;
 
 
 
+$review-color: #F8B68A;
 $theme-color-white: #ffffff;
 $white-color-rgb: 255,255,255;
 $body-color: #545454;
-$light-gray: #EAEAEA;
+$light-gray: #D5D5D5;
 $bluish-gray: #F2F2F9;
 $theme-color-gray: #8b8b8b;
 $theme-color-dark: #151517;
@@ -39,14 +40,16 @@ $theme-color-black-rgb: 0,0,0;
   --light-gray:   #{$light-gray};
   --bluish-gray:   #{$bluish-gray};
   --gray-color:   #{$theme-color-gray};
-
+  
+  
   --dark-color:   #{$theme-color-dark};
   --dark-color2:  #{$theme-color-dark2};
-
+  
   --black-color:  #{$theme-color-black};
   --black-color-rgb:  #{$theme-color-black-rgb};
   --white-color:  #{$theme-color-white};  
   --white-color-rgb:  #{$white-color-rgb};
+  --review-color:   #{$review-color};
 
   
   //theme colors RGB
@@ -86,7 +89,7 @@ $theme-color-black-rgb: 0,0,0;
   --font-size-14:           14px;
   --font-size-15:           15px;
   --font-size-16:           16px;
-  --body-font-size:         var(--font-size-14);
+  --body-font-size:         var(--font-size-16);
   --body-font-weight:       400;
   --body-font-weight-bold:  600;
   --body-line-height:       1.71;

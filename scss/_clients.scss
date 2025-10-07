@@ -1,0 +1,21 @@
+/*  Client Or Partner style 1  */
+
+.our-client{
+	position: relative;
+	.outer-box{
+		background-color: var(--text-white);
+		border-radius: 24px;
+		padding: 22px;
+	}
+}
+.client-box{
+	position: relative;
+	img{
+    transition: all ease 400ms;
+	}
+	&:hover{
+		img{
+			transform: scaleX(-1);
+		}
+	}
+}

@@ -249,7 +249,7 @@ img {
   --theme-color6: #11AB8B;
   --theme-color7: #0176EA;
   --body-color: #545454;
-  --light-gray: #EAEAEA;
+  --light-gray: #D5D5D5;
   --bluish-gray: #F2F2F9;
   --gray-color: #8b8b8b;
   --dark-color: #151517;
@@ -258,6 +258,7 @@ img {
   --black-color-rgb: 0, 0, 0;
   --white-color: #ffffff;
   --white-color-rgb: 255, 255, 255;
+  --review-color: #F8B68A;
   --theme-color1-rgb: 245, 99, 0;
   --theme-color2-rgb: 11, 178, 137;
   --text-black: var(--black-color);
@@ -279,7 +280,7 @@ img {
   --font-size-14: 14px;
   --font-size-15: 15px;
   --font-size-16: 16px;
-  --body-font-size: var(--font-size-14);
+  --body-font-size: var(--font-size-16);
   --body-font-weight: 400;
   --body-font-weight-bold: 600;
   --body-line-height: 1.71;
@@ -544,23 +545,22 @@ iframe {
 /*
  * button.scss
  * -----------------------------------------------
-*/
-.su-btn-4 {
-  background: var(--white-color);
-  padding: 20px 36px;
-  font-weight: var(--font-weight-600);
-  font-size: 13px;
-  line-height: 1;
-  letter-spacing: 0.02em;
+ */
+.text-btn {
   color: var(--dark-color);
   display: inline-block;
+  font-size: 12px;
+  font-weight: var(--font-weight-700);
+  line-height: 15px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
   -webkit-transition: all 0.4s ease-out 0s;
   transition: all 0.4s ease-out 0s;
 }
-.su-btn-4:hover {
+.text-btn:hover {
   color: var(--dark-color);
 }
-.su-btn-4.dark-border1 {
+.text-btn.dark-border1 {
   border: 1px solid var(--dark-color);
 }
 
@@ -1731,6 +1731,28 @@ Scroll To Top style
 .theme-color1 {
   color: var(--text-white);
   background-image: linear-gradient(160deg, var(--theme-color1) 50%, var(--black-color) 50%);
+}
+
+/*  Client Or Partner style 1  */
+.our-client {
+  position: relative;
+}
+.our-client .outer-box {
+  background-color: var(--text-white);
+  border-radius: 24px;
+  padding: 22px;
+}
+
+.client-box {
+  position: relative;
+}
+.client-box img {
+  -webkit-transition: all ease 400ms;
+  transition: all ease 400ms;
+}
+.client-box:hover img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 /***  Header Top  ***/
@@ -3852,14 +3874,14 @@ header.header-nav {
 }
 /*  Job Box Style One  */
 .job-box .inner-box {
-  background-color: #fff;
-  border: 1px solid #F2F2F9;
+  background-color: var(--text-white);
+  border: 1px solid var(--bluish-gray);
   border-radius: 24px;
   margin-bottom: 40px;
   padding: 30px;
   position: relative;
-  -webkit-transition: all ease 400ms;
-  transition: all ease 400ms;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
 }
 .job-box .inner-box:hover {
   -webkit-box-shadow: 0px 5px 16px rgba(198, 198, 198, 0.593883);
@@ -3878,7 +3900,7 @@ header.header-nav {
   margin-bottom: 10px;
 }
 .job-box .jb-header .icon {
-  border: 1px solid #D5D5D5;
+  border: 1px solid var(--light-gray);
   border-radius: 8px;
   height: 65px;
   line-height: 65px;
@@ -3995,6 +4017,45 @@ header.header-nav {
  * Testimonials.scss
  * -----------------------------------------------
 */
+.testimonial-box .inner-box {
+  background-color: var(--text-white);
+  border-radius: 24px;
+  padding: 30px;
+  position: relative;
+}
+.testimonial-box .review {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--review-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  gap: 7px;
+  line-height: 14px;
+}
+.testimonial-box .client-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+.testimonial-box .client-info .designation {
+  margin-bottom: 8px;
+}
+.testimonial-box .client-info .thumb {
+  border: 1px solid var(--light-gray);
+  border-radius: 12px;
+  height: 81px;
+  line-height: 81px;
+  margin-right: 27px;
+  text-align: center;
+  width: 81px;
+}
+
 /*
  * shop-single.scss
  * -----------------------------------------------
