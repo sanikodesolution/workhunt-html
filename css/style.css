@@ -1733,28 +1733,6 @@ Scroll To Top style
   background-image: linear-gradient(160deg, var(--theme-color1) 50%, var(--black-color) 50%);
 }
 
-/*  Client Or Partner style 1  */
-.our-client {
-  position: relative;
-}
-.our-client .outer-box {
-  background-color: var(--text-white);
-  border-radius: 24px;
-  padding: 22px;
-}
-
-.client-box {
-  position: relative;
-}
-.client-box img {
-  -webkit-transition: all ease 400ms;
-  transition: all ease 400ms;
-}
-.client-box:hover img {
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-}
-
 /***  Header Top  ***/
 /*  home 4 style header top  */
 .su-header-4-top {
@@ -2717,67 +2695,6 @@ header.header-nav {
   line-height: 22px;
   letter-spacing: 0.24px;
   text-transform: uppercase;
-}
-
-.su-header-global-bottom.inner-style {
-  border-bottom: 1px solid var(--gray-color);
-}
-.su-header-global-bottom.inner-style .su-menu-4 {
-  text-align: center;
-}
-.su-header-global-bottom.inner-style .su-menu-4 > nav > ul > li {
-  display: inline-block;
-  margin-right: 20px;
-  position: relative;
-}
-.su-header-global-bottom.inner-style .su-menu-4 > nav > ul > li a {
-  color: var(--dark-color);
-  font-family: var(--title-font4);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.24px;
-}
-.su-header-global-bottom.inner-style .su-menu-4 > nav > ul > li a::before {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 1px;
-  bottom: -3px;
-  left: auto;
-  right: 0;
-  background: var(--dark-color);
-  opacity: 0;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-.su-header-global-bottom.inner-style .su-menu-4 > nav > ul > li .sub-menu li a {
-  color: var(--dark-color) !important;
-}
-.su-header-global-bottom.inner-style .su-menu-4 > nav > ul > li .su-mega-menu-4 .thumb .title a {
-  font-size: 16px;
-  color: var(--dark-color);
-  font-weight: 500;
-  font-family: var(--body-font);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#1D1D1D), to(#1D1D1D)), -webkit-gradient(linear, left top, left bottom, from(#1D1D1D), to(#1D1D1D));
-  background-image: linear-gradient(#1D1D1D, #1D1D1D), linear-gradient(#1D1D1D, #1D1D1D);
-  background-size: 0 1px, 0 1px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  -webkit-transition: background-size 0.3s linear;
-  transition: background-size 0.3s linear;
-}
-.su-header-global-bottom.inner-style .su-menu-4 > nav > ul > li .su-mega-menu-4 nav ul li a {
-  font-weight: 500;
-  font-size: 13px;
-  color: var(--dark-color) !important;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  display: inline-block;
-}
-.su-header-global-bottom.inner-style .sub-menu > li > a {
-  color: var(--dark-color);
 }
 
 /*
@@ -3949,62 +3866,80 @@ header.header-nav {
   margin-bottom: 50px;
 }
 
-/*
- * BeforeAfter.scss
- * -----------------------------------------------
-*/
 /*  home 1 banner style  */
 /*
- * news.scss
+ * Blog.scss
  * -----------------------------------------------
 */
-/*
- * product.scss
- * -----------------------------------------------
-*/
-.shop-process-btns li:hover .tooltip {
+.new-post-one .inner-box {
+  position: relative;
+}
+.new-post-one .inner-box:hover .content-box {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  visibility: visible;
+}
+.new-post-one .inner-box:hover .image-box:before {
   opacity: 1;
   visibility: visible;
 }
-
-.tooltip {
-  z-index: 202;
+.new-post-one .image-box {
+  border-radius: 24px;
+  overflow: hidden;
+  position: relative;
+}
+.new-post-one .image-box:before {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(33.98%, rgba(0, 0, 0, 0.0299234)), color-stop(89.04%, rgba(0, 0, 0, 0.750864)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.0299234) 33.98%, rgba(0, 0, 0, 0.750864) 89.04%);
+  bottom: 0;
+  content: "";
+  height: 510px;
+  left: 0;
   opacity: 0;
-  visibility: hidden;
-  display: block;
   position: absolute;
-  top: 0%;
-  right: 40px;
-  margin-top: 0px;
-  border-radius: 2px;
-  white-space: nowrap;
-  background-color: var(--dark-color);
-  color: var(--white-color);
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 12px;
-  padding: 7px 10px 9px;
-  max-width: 250px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  -webkit-transition: opacity 0.4s ease 0.2s, -webkit-transform 0.4s ease 0.2s;
-  transition: opacity 0.4s ease 0.2s, -webkit-transform 0.4s ease 0.2s;
-  transition: transform 0.4s ease 0.2s, opacity 0.4s ease 0.2s;
-  transition: transform 0.4s ease 0.2s, opacity 0.4s ease 0.2s, -webkit-transform 0.4s ease 0.2s;
+  right: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.new-post-one .content-box {
+  bottom: 0;
+  opacity: 0;
+  padding-left: 30px;
+  position: absolute;
+  visibility: hidden;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.new-post-one .title {
+  color: var(--text-white);
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
 }
 
-.tooltip::before {
-  content: "";
-  top: 40%;
-  -webkit-transform: translateX(-50%) rotate(45deg);
-          transform: translateX(-50%) rotate(45deg);
-  right: -7px;
-  position: absolute;
-  background: var(--dark-color);
-  width: 8px;
-  height: 8px;
-  z-index: 100;
+/*  Client Or Partner style 1  */
+.our-client {
+  position: relative;
+}
+.our-client .outer-box {
+  background-color: var(--text-white);
+  border-radius: 24px;
+  padding: 22px;
+}
+
+.client-box {
+  position: relative;
+}
+.client-box img {
+  -webkit-transition: all ease 400ms;
+  transition: all ease 400ms;
+}
+.client-box:hover img {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 /*
@@ -4012,7 +3947,6 @@ header.header-nav {
  * -----------------------------------------------
 */
 /***  Sliders  ***/
-/*  Video home 12 style  */
 /*
  * Testimonials.scss
  * -----------------------------------------------
@@ -4056,10 +3990,6 @@ header.header-nav {
   width: 81px;
 }
 
-/*
- * shop-single.scss
- * -----------------------------------------------
-*/
 /***  Page Titles Styles  ***/
 .su-section-4-title {
   color: var(--text-black);
