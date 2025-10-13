@@ -4,17 +4,24 @@
 */
 .new-post-one{
 	.inner-box{
+		margin-bottom: 30px;
+		overflow: hidden;
 		position: relative;
 		&:hover{
 			.content-box{
 				opacity: 1;
-				transform: translateY(0px);
+				transform: translateY(-30px);
 				visibility: visible;
+		    z-index: 1;
 			}
 			.image-box{
+				img{
+					transform: scale(1.1);
+				}
 				&:before{
 					opacity: 1;
 					visibility: visible;
+					z-index: 1;
 				}
 			}
 		}
@@ -23,11 +30,15 @@
 		border-radius: 24px;
 		overflow: hidden;
 		position: relative;
+		img{
+			transform: scale(1.0);
+	    @include transition(.8s);
+		}
 		&:before{
-			background: linear-gradient(180deg, rgba(0, 0, 0, 0.0299234) 33.98%, rgba(0, 0, 0, 0.750864) 89.04%);
+			background: var(--gradient-color3);
 			bottom: 0;
 			content: "";
-			height: 510px;
+			height: 524px;
 			left: 0;
 			opacity: 0;
 			position: absolute;
@@ -47,6 +58,10 @@
 	}
 	.title{
 		color: var(--text-white);
-    @include transition(.4s);		
+		margin-bottom: 25px;
+    @include transition(.4s);
+    @include media-breakpoint-down(sm){
+    	max-width: 90%;
+    }
 	}
 }

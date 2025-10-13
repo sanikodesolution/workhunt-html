@@ -45,6 +45,12 @@ $theme-color-black-rgb: 0,0,0;
   --dark-color:   #{$theme-color-dark};
   --dark-color2:  #{$theme-color-dark2};
   
+  // Gradient Color
+  --gradient-color1:   linear-gradient(187.96deg, #494949 8.17%, #000000 95.84%);
+  --gradient-color2:   linear-gradient(180deg, rgba(0, 0, 0, 0.0299234) 29.6%, rgba(0, 0, 0, 0.750864) 89.04%), #D8D8D8;
+  --gradient-color3:   linear-gradient(180deg, rgba(0, 0, 0, 0.0299234) 33.98%, rgba(0, 0, 0, 0.750864) 89.04%);
+
+
   --black-color:  #{$theme-color-black};
   --black-color-rgb:  #{$theme-color-black-rgb};
   --white-color:  #{$theme-color-white};  

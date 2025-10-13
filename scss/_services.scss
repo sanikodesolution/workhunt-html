@@ -50,6 +50,7 @@
   &.style2{
     .inner-box{
       background-color: transparent;
+      padding-top: 0;
       &:hover{
         box-shadow: none;
       }
