@@ -1304,7 +1304,7 @@
 
 
     /*=============================================
-      =        su-collections-4-slider       =
+      =        su-collections-5-2-slider       =
     =============================================*/
     var slider = new Swiper('.five-grid-slider2', {
       speed: 700,
@@ -1345,7 +1345,7 @@
 
 
     /*=============================================
-      =        su-collections-4-slider       =
+      =        su-collections-5-slider       =
     =============================================*/
     var slider = new Swiper('.five-grid-slider3', {
       speed: 700,
@@ -1424,7 +1424,7 @@
 
 
     /*=============================================
-      =        su-collections-4-slider       =
+      =        su-collections-3.5-slider       =
     =============================================*/
     var slider = new Swiper('.threefive-grid-slider', {
       speed: 700,
@@ -1546,19 +1546,66 @@
     =============================================*/
     var slider = new Swiper('.three-grid-slider', {
       speed: 700,
-      slidesPerView: 'auto',
-      spaceBetween: 5,
+      slidesPerView: 3,
+      spaceBetween: 10,
       loop: true,
       navigation: {
-        nextEl: ".next",
-        prevEl: ".prev",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
       },
       autoplay: {
-        delay: 4000,
+        delay: 2000,
+        disableOnInteraction: false,
       },
       breakpoints: {
         '1200': {
           slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        '991': {
+          slidesPerView: 3,
+        },
+        '768': {
+          slidesPerView: 2,
+        },
+        '576': {
+          slidesPerView: 2,
+        },
+        '0': {
+          slidesPerView: 1,
+        },
+      },
+    });
+
+
+    /*=============================================
+      =        Three Grid Slider (Top Collection)       =
+    =============================================*/
+    var slider = new Swiper('.three-grid-slider2', {
+      speed: 700,
+      slidesPerView: 3,
+      spaceBetween: 10,
+      loop: true,
+      navigation: {
+        nextEl: ".swiper-button-next2",
+        prevEl: ".swiper-button-prev2",
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        '1200': {
+          slidesPerView: 3,
+          spaceBetween: 40,
         },
         '991': {
           slidesPerView: 3,

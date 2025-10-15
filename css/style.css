@@ -3994,6 +3994,71 @@ header.header-nav {
  * -----------------------------------------------
 */
 /***  Sliders  ***/
+.default-navigation .swiper-button-prev,
+.default-navigation .swiper-button-next,
+.default-navigation .swiper-button-prev2,
+.default-navigation .swiper-button-next2 {
+  background-color: var(--white-color);
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 3px 14px rgba(111, 111, 112, 0.156037);
+          box-shadow: 0px 3px 14px rgba(111, 111, 112, 0.156037);
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  top: 44%;
+  width: 48px;
+  -webkit-transition: all 0.4s ease-out 0s;
+  transition: all 0.4s ease-out 0s;
+}
+.default-navigation .swiper-button-prev:after,
+.default-navigation .swiper-button-next:after,
+.default-navigation .swiper-button-prev2:after,
+.default-navigation .swiper-button-next2:after {
+  display: none;
+}
+.default-navigation .swiper-button-prev:hover,
+.default-navigation .swiper-button-next:hover,
+.default-navigation .swiper-button-prev2:hover,
+.default-navigation .swiper-button-next2:hover {
+  background-color: var(--theme-color1);
+  color: var(--white-color);
+}
+.default-navigation .swiper-button-prev,
+.default-navigation .swiper-button-prev2 {
+  left: 8%;
+}
+.default-navigation .swiper-button-prev2,
+.default-navigation .swiper-button-next2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  top: 46%;
+  z-index: 10;
+}
+.default-navigation .swiper-button-next,
+.default-navigation .swiper-button-next2 {
+  right: 8%;
+}
+
+.swiper-pagination {
+  margin-bottom: -10px;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: var(--light-gray);
+  opacity: 1;
+}
+.swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--theme-color1);
+}
+
 /*
  * Testimonials.scss
  * -----------------------------------------------

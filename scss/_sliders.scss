@@ -1,1 +1,53 @@
 /***  Sliders  ***/
+.default-navigation{
+	.swiper-button-prev,
+	.swiper-button-next,
+	.swiper-button-prev2,
+	.swiper-button-next2{
+		background-color: var(--white-color);
+		border-radius: 50%;
+		box-shadow: 0px 3px 14px rgba(111, 111, 112, 0.156037);
+		height: 48px;
+		line-height: 48px;
+		text-align: center;
+		top: 44%;
+		width: 48px;
+    @include transition(.4s);
+		&:after{
+			display: none;
+		}
+		&:hover{
+			background-color: var(--theme-color1);
+			color: var(--white-color);
+		}
+	}
+	.swiper-button-prev,
+	.swiper-button-prev2{
+		left: 8%;
+	}
+
+	.swiper-button-prev2,
+	.swiper-button-next2{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+		position: absolute;
+    top: 46%;
+    z-index: 10;
+	}
+	.swiper-button-next,
+	.swiper-button-next2{
+		right: 8%;
+	}
+}
+.swiper-pagination{
+	margin-bottom: -10px;
+	.swiper-pagination-bullet{
+		background-color: var(--light-gray);
+		opacity: 1;
+		&.swiper-pagination-bullet-active{
+			background-color: var(--theme-color1);			
+		}
+	}
+}
