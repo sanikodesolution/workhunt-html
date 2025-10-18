@@ -1,3 +1,11 @@
+.section-title,
 .sec-title{
   margin-bottom: 50px;
+  position: relative;
+  .title{
+    font-size: 52px;
+  }
+  .text{
+    font-size: 20px;
+  }
 }

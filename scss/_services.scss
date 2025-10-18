@@ -10,6 +10,11 @@
     @include transition(.4s);
     &:hover{
       box-shadow: 0px 5px 16px rgba(198, 198, 198, 0.593883);
+      .icon{
+        img{
+          transform: rotateY(360deg);
+        }
+      }
     }
   }
   .jb-header{
@@ -24,6 +29,9 @@
       line-height: 65px;
       text-align: center;
       width: 65px;
+      img{
+        @include transition(.4s);
+      }
     }
     .job-tag{
       border-radius: 4px;
