@@ -53,3 +53,41 @@
 		}
 	}
 }
+.banner-content{
+	position: relative;
+	.title{
+		color: var(--dark-color);
+		font-size: 72px;
+		line-height: 86px;
+		span{
+			color: var(--theme-color1);
+		}
+
+	}
+  .input-dropdown-group {
+    display: flex;
+    align-items: stretch;
+    .form-control {
+	    border-top-right-radius: 0;
+	    border-bottom-right-radius: 0;
+	  }
+	  .btn-group {
+	    flex-shrink: 0;
+	  }
+  }
+  .job-tag{
+  	align-items: center;
+  	display: flex;
+		font-size: 14px;
+		font-weight: 500;
+		gap: 7px;
+		line-height: 18px;
+  	span{
+			color: var(--dark-color);
+  		margin-right: 5px;
+  	}
+  	a{
+  		color: var(--theme-color7);
+  	}
+  }
+}
