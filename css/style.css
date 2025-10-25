@@ -3939,6 +3939,8 @@ header.header-nav {
   max-width: 259px;
   padding: 20px;
   position: relative;
+  -webkit-animation: bounce-y 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          animation: bounce-y 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .banner-image-box .counter-box .icon {
   background-color: var(--theme-color2);
@@ -3965,9 +3967,32 @@ header.header-nav {
   max-width: 267px;
   padding: 20px;
   position: relative;
+  left: 30px;
+  top: -55px;
+  -webkit-animation: bounce-x 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          animation: bounce-x 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 .banner-image-box .banner-client-box .thumb {
   margin-right: 16px;
+  height: 71px;
+  position: relative;
+  width: 84px;
+}
+.banner-image-box .banner-client-box .thumb .img-1 {
+  z-index: 2;
+}
+.banner-image-box .banner-client-box .thumb .img-1,
+.banner-image-box .banner-client-box .thumb .img-2,
+.banner-image-box .banner-client-box .thumb .img-3 {
+  position: absolute;
+}
+.banner-image-box .banner-client-box .thumb .img-2 {
+  bottom: 0;
+  left: 20px;
+  z-index: 1;
+}
+.banner-image-box .banner-client-box .thumb .img-3 {
+  right: 0;
 }
 .banner-image-box .banner-client-box .review {
   color: var(--review-color);
@@ -3975,6 +4000,31 @@ header.header-nav {
   gap: 6px;
 }
 
+@-webkit-keyframes bounce-y {
+  50% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce-y {
+  50% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce-x {
+  50% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+}
+@keyframes bounce-x {
+  50% {
+    -webkit-transform: translateX(-15px);
+            transform: translateX(-15px);
+  }
+}
 .banner-content {
   position: relative;
 }
@@ -3985,22 +4035,6 @@ header.header-nav {
 }
 .banner-content .title span {
   color: var(--theme-color1);
-}
-.banner-content .input-dropdown-group {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-}
-.banner-content .input-dropdown-group .form-control {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.banner-content .input-dropdown-group .btn-group {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 .banner-content .job-tag {
   -webkit-box-align: center;
