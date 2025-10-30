@@ -21,6 +21,7 @@ $body-color: #545454;
 $light-gray: #D5D5D5;
 $bluish-gray: #F2F2F9;
 $theme-color-gray: #8b8b8b;
+$gray-light-shade: #FBFBFF;
 $theme-color-dark: #151517;
 $theme-color-dark2: #352F27;
 $theme-color-black: #000000;
@@ -40,6 +41,7 @@ $theme-color-black-rgb: 0,0,0;
   --light-gray:   #{$light-gray};
   --bluish-gray:   #{$bluish-gray};
   --gray-color:   #{$theme-color-gray};
+  --gray-lightshd-color:   #{$gray-light-shade};
   
   
   --dark-color:   #{$theme-color-dark};

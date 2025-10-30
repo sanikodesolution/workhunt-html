@@ -5,9 +5,9 @@
 		border-radius: 24px;
 	}
 	.counter-box{
-    bottom: 250px;
-    position: absolute;
-    right: 0;
+		bottom: 250px;
+		position: absolute;
+		right: 0;
 		.inner{
 			background-color: var(--white-color);
 			border-radius: 18px;
@@ -15,7 +15,7 @@
 			max-width: 259px;
 			padding: 20px;
 			position: relative;
-	    animation: bounce-y 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+			animation: bounce-y 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
 		}
 		.icon{
 			background-color: var(--theme-color2);
@@ -44,8 +44,8 @@
 			padding: 20px;
 			position: relative;
 			left: 30px;
-	    top: -55px;
-	    animation: bounce-x 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+			top: -55px;
+			animation: bounce-x 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
 		}
 		.thumb{
 			margin-right: 16px;
@@ -61,9 +61,9 @@
 				position: absolute;
 			}
 			.img-2{
-		    bottom: 0;
-		    left: 20px;
-		    z-index: 1;
+				bottom: 0;
+				left: 20px;
+				z-index: 1;
 			}
 			.img-3{
 				right: 0;
@@ -78,38 +78,120 @@
 }
 @keyframes bounce-y {
 	50% {
-    transform: translateY(-15px);
-  }
+		transform: translateY(-15px);
+	}
 }
 @keyframes bounce-x {
 	50% {
-    transform: translateX(-15px);
-  }
+		transform: translateX(-15px);
+	}
 }
 .banner-content{
 	position: relative;
 	.title{
 		color: var(--dark-color);
-		font-size: 72px;
-		line-height: 86px;
+		@include responsive-font(24px, 3.75vw, 72px, 1.19);
 		span{
 			color: var(--theme-color1);
 		}
-
 	}
-  .job-tag{
-  	align-items: center;
-  	display: flex;
+	.job-tag{
+		align-items: center;
+		display: flex;
 		font-size: 14px;
 		font-weight: 500;
 		gap: 7px;
 		line-height: 18px;
-  	span{
+		span{
 			color: var(--dark-color);
-  		margin-right: 5px;
-  	}
-  	a{
-  		color: var(--theme-color7);
-  	}
-  }
+			margin-right: 5px;
+		}
+		a{
+			color: var(--theme-color7);
+		}
+	}
+}
+
+// Freelancer Banner Style
+.banner-section2-home1{
+	.outer-box{
+		background: var(--gradient-color1);
+		border-radius: 24px;
+		padding-top: 70px;
+		position: relative;
+	}
+}
+.freelancer-banner{
+	padding-left: 60px;
+	position: relative;
+	.title{
+		color: var(--gray-lightshd-color);
+		@include responsive-font(48px, 3.75vw, 80px, 1.26);
+		margin-bottom: 30px;
+	}
+}
+
+.marquee-text{
+	display: flex;
+	gap: 40px;
+	overflow: hidden;
+	position: relative;
+	padding: 50px 0;
+	white-space: nowrap;
+	margin-bottom: 50px;
+	.comm {
+		display: flex;
+		align-items: center;
+		animation: scroll-to-left 40s linear infinite;
+		gap: 100px;
+		cursor: pointer;
+		.cmn-textslide {
+			color: var(--white-color);
+			font-weight: 600;
+			font-size: 13px;
+			line-height: 16px;
+			letter-spacing: 0.02em;
+		}
+	}
+}
+
+.marquee-text2{
+	display: flex;
+	gap: 40px;
+	overflow: hidden;
+	position: relative;
+	padding: 50px 0;
+	white-space: nowrap;
+	margin-bottom: 50px;
+	.comm2 {
+		display: flex;
+		align-items: center;
+		animation: scroll-to-right 40s linear infinite;
+		gap: 100px;
+		cursor: pointer;
+		.mrqee-text {
+			color: var(--white-color);
+			font-weight: 600;
+			font-size: 13px;
+			line-height: 16px;
+			letter-spacing: 0.02em;
+		}
+	}
+}
+
+@keyframes scroll-to-left {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+@keyframes scroll-to-right {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
 }
