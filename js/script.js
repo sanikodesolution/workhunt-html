@@ -157,7 +157,7 @@
             '<a href="#" class="js-mm-close"><i class="flaticon-close"></i></a>' +
             '<a href="#" class="js-mm-search cart-search-btn"><i class="flaticon-web"></i></a>' +
           '</div>' +
-          '<div class="mmx-logo"><img src="images/logo-new.svg" alt="newsletter-img"></div>' +
+          '<div class="mmx-logo"><img src="images/logo.svg" alt="newsletter-img"></div>' +
           '<div class="mmx-right">' +
             '<a class="signin-cart-btn" href="#"><i class="flaticon-user-1"></i></a>' +
             '<a class="cart-search-btn" href="#"><i class="flaticon-shopping-bag"></i></a>' +

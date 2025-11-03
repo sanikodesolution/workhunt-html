@@ -3757,7 +3757,7 @@ header.header-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 40px;
+  gap: 20px;
   overflow: hidden;
   position: relative;
   padding: 50px 0;
@@ -3772,15 +3772,8 @@ header.header-nav {
           align-items: center;
   -webkit-animation: scroll 20s linear infinite;
           animation: scroll 20s linear infinite;
-  gap: 100px;
+  gap: 16px;
   cursor: pointer;
-}
-.scrolling-wrap.home1 .comm .cmn-textslide {
-  color: var(--white-color);
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
 }
 
 @-webkit-keyframes scroll {
@@ -3822,6 +3815,103 @@ header.header-nav {
   100% {
     -webkit-transform: translateX(-200%);
             transform: translateX(-200%);
+  }
+}
+.marquee-style1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+.marquee-style1 .comm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: scroll-to-left 40s linear infinite;
+          animation: scroll-to-left 40s linear infinite;
+  gap: 16px;
+  cursor: pointer;
+}
+.marquee-style1 .marq-item {
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  width: 116px;
+}
+
+.marquee-style2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 18px;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+}
+.marquee-style2 .comm2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-animation: scroll-to-right 40s linear infinite;
+          animation: scroll-to-right 40s linear infinite;
+  gap: 16px;
+  cursor: pointer;
+}
+.marquee-style2 .marq-item {
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
+  width: 116px;
+}
+
+@-webkit-keyframes scroll-to-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll-to-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes scroll-to-right {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@keyframes scroll-to-right {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  100% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 /*  Job Box Style One  */
@@ -4060,8 +4150,22 @@ header.header-nav {
 .banner-section2-home1 .outer-box {
   background: var(--gradient-color1);
   border-radius: 24px;
+  overflow: hidden;
   padding-top: 70px;
   position: relative;
+}
+.banner-section2-home1 .outer-box .banner-phn {
+  bottom: 0;
+  left: auto;
+  position: absolute;
+  right: 30px;
+  width: auto;
+}
+.banner-section2-home1 .outer-box .object-1 {
+  position: absolute;
+  right: 50px;
+  top: 50px;
+  width: auto;
 }
 
 .freelancer-banner {
@@ -4075,109 +4179,6 @@ header.header-nav {
   margin-bottom: 30px;
 }
 
-.marquee-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-  overflow: hidden;
-  position: relative;
-  padding: 50px 0;
-  white-space: nowrap;
-  margin-bottom: 50px;
-}
-.marquee-text .comm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: scroll-to-left 40s linear infinite;
-          animation: scroll-to-left 40s linear infinite;
-  gap: 100px;
-  cursor: pointer;
-}
-.marquee-text .comm .cmn-textslide {
-  color: var(--white-color);
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-
-.marquee-text2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 40px;
-  overflow: hidden;
-  position: relative;
-  padding: 50px 0;
-  white-space: nowrap;
-  margin-bottom: 50px;
-}
-.marquee-text2 .comm2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-animation: scroll-to-right 40s linear infinite;
-          animation: scroll-to-right 40s linear infinite;
-  gap: 100px;
-  cursor: pointer;
-}
-.marquee-text2 .comm2 .mrqee-text {
-  color: var(--white-color);
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-}
-
-@-webkit-keyframes scroll-to-left {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-
-@keyframes scroll-to-left {
-  0% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-  }
-  100% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-}
-@-webkit-keyframes scroll-to-right {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
-@keyframes scroll-to-right {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  100% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-}
 /*
  * Blog.scss
  * -----------------------------------------------
@@ -4338,6 +4339,78 @@ header.header-nav {
   padding: 12px 45px;
 }
 
+.faq-main-content .accordion .global-accordion-item {
+  border-bottom: 1px solid var(--gray-color);
+}
+.faq-main-content .accordion .global-accordion-item .global-accordion-header {
+  margin: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.faq-main-content .accordion .global-accordion-item .global-accordion-button {
+  font-style: normal;
+  color: var(--theme-color1);
+  padding: 20px 0px 15px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  width: 100%;
+}
+@media (max-width: 575.98px) {
+  .faq-main-content .accordion .global-accordion-item .global-accordion-button {
+    font-size: 14px;
+    line-height: 24px;
+    padding: 14px 0 8px 0;
+  }
+}
+.faq-main-content .accordion .global-accordion-item .global-accordion-button .question {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  line-height: 36px;
+}
+.faq-main-content .accordion .global-accordion-item .global-accordion-button .icon {
+  color: #151517;
+  display: none;
+  font-size: 21px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.faq-main-content .accordion .global-accordion-item .global-accordion-button .icon2 {
+  color: var(--theme-color1);
+  font-size: 21px;
+  -webkit-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+}
+.faq-main-content .accordion .global-accordion-item .global-accordion-button.collapsed {
+  color: #151517;
+  padding-bottom: 20px;
+}
+.faq-main-content .accordion .global-accordion-item .global-accordion-button.collapsed .icon {
+  display: block;
+}
+.faq-main-content .accordion .global-accordion-item .global-accordion-button.collapsed .icon2 {
+  display: none;
+}
+.faq-main-content .accordion .global-accordion-item .global-accordion-body {
+  padding: 0 0 30px;
+}
+.faq-main-content .accordion .global-accordion-item .global-accordion-body .text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #545454;
+  max-width: 621px;
+}
+
 /*
  * tabs.scss
  * -----------------------------------------------
@@ -4466,7 +4539,7 @@ header.header-nav {
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
-  gap: 7px;
+  gap: 3px;
   line-height: 14px;
 }
 .testimonial-box .client-info {
