@@ -1,0 +1,32 @@
+.contact-form{
+	.form-control{
+		background: rgba(255, 255, 255, 0.870305);
+		border: 1px solid #D5D5D5;
+		border-radius: 6px;
+		height: 40px;
+		&:focus{
+			box-shadow: none;
+			outline: none;
+		}
+	}
+	textarea{
+		&.form-control,
+		&.textarea{
+			background-color: var(--white-color);
+			height: 126px;
+			width: 100%;
+		}
+	}
+}
+.srch-icon{
+	background-color: var(--theme-color3);
+	border-radius: 50%;
+	color: var(--white-color);
+	display: inline-block;
+	font-size: 18px;
+	height: 52px;
+	line-height: 52px;
+	text-align: center;
+	vertical-align: super;
+	width: 52px;
+}
