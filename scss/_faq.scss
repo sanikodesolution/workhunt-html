@@ -17,7 +17,6 @@
           justify-content: space-between;
           align-items: center;
           position: relative;
-          text-transform: uppercase;
           width: 100%;
           @include media-breakpoint-down(sm) {
             font-size: 14px;
@@ -31,7 +30,7 @@
             line-height: 36px;
           }
           .icon {
-            color: #151517;
+            color: var(--dark-color);
             display: none;
             font-size: 21px;
             @include transition(.3s);
@@ -42,7 +41,7 @@
             @include transition(.3s);
           }
           &.collapsed {
-            color: #151517;
+            color: var(--dark-color);
             padding-bottom: 20px;
             .icon {
               display: block;  
@@ -56,10 +55,8 @@
           padding: 0 0 30px;
           .text {
             @include sub-title1;
-            font-weight: 400;
-            font-size: 16px;
             line-height: 24px;
-            color: #545454;
+            color: var(--body-color);
             max-width: 621px;
           }
         }

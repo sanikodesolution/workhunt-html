@@ -333,6 +333,12 @@ Scroll To Top style
     }
   }
 }
+.swiper-pagination-bullet{
+  &.swiper-pagination-bullet-active{
+    height: 10px;
+    width: 10px;
+  }
+}
 .swiper-default-nav{
   bottom: 0;
   position: absolute;
