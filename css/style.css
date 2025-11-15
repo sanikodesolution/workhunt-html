@@ -256,7 +256,7 @@ img {
   --dark-color: #151517;
   --dark-color2: #352F27;
   --gradient-color1: linear-gradient(187.96deg, #494949 8.17%, #000000 95.84%);
-  --gradient-color2: linear-gradient(180deg, rgba(0, 0, 0, 0.0299234) 29.6%, rgba(0, 0, 0, 0.750864) 89.04%), #D8D8D8;
+  --gradient-color2: linear-gradient(180deg, rgba(0, 0, 0, 0.0299234) 29.6%, rgba(0, 0, 0, 0.750864) 89.04%);
   --gradient-color3: linear-gradient(180deg, rgba(0, 0, 0, 0.0299234) 33.98%, rgba(0, 0, 0, 0.750864) 89.04%);
   --black-color: #000000;
   --black-color-rgb: 0, 0, 0;
@@ -1708,7 +1708,7 @@ Scroll To Top style
   background-size: 300%;
   border-radius: 4px;
   border: 1px solid var(--theme-color1);
-  color: var(--text-white);
+  color: var(--white-color);
   font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.6px;
@@ -1745,31 +1745,38 @@ Scroll To Top style
           transform: translateX(100%) translateY(-50%);
   opacity: 0;
 }
-.btn-style1:hover {
+.btn-style1:hover, .btn-style1:focus {
   background-position: 100%;
   border: 1px solid var(--black-color);
-  color: var(--text-white);
+  color: var(--white-color);
 }
-.btn-style1:hover .icon.icon1 {
+.btn-style1:hover .icon.icon1, .btn-style1:focus .icon.icon1 {
   -webkit-transform: translateX(-100%) translateY(-50%);
           transform: translateX(-100%) translateY(-50%);
   opacity: 0;
 }
-.btn-style1:hover .icon.icon2 {
+.btn-style1:hover .icon.icon2, .btn-style1:focus .icon.icon2 {
   -webkit-transform: translateX(0) translateY(-50%);
           transform: translateX(0) translateY(-50%);
   opacity: 1;
 }
 .btn-style1.btn-dark {
   background-image: linear-gradient(160deg, var(--dark-color) 50%, var(--theme-color1) 50%);
-  color: var(--text-white);
+  color: var(--white-color);
 }
 .btn-style1.btn-dark:hover {
-  border-color: var(--text-white);
+  border-color: var(--white-color);
 }
-
-.theme-color1 {
-  color: var(--text-white);
+.btn-style1.btn-white {
+  background-image: linear-gradient(160deg, var(--white-color) 50%, var(--theme-color1) 50%);
+  border: 1px solid var(--white-color);
+  color: var(--black-color);
+}
+.btn-style1.btn-white:hover {
+  color: var(--white-color);
+}
+.btn-style1.theme-color1 {
+  color: var(--white-color);
   background-image: linear-gradient(160deg, var(--theme-color1) 50%, var(--black-color) 50%);
 }
 
@@ -4453,6 +4460,7 @@ header.header-nav {
   position: relative;
 }
 .feature-box .image-box {
+  overflow: hidden;
   position: relative;
 }
 .feature-box .image-box img {
@@ -4484,6 +4492,98 @@ header.header-nav {
   right: 0;
   top: 0;
   z-index: 1;
+}
+.feature-box.style2 {
+  position: relative;
+}
+.feature-box.style2 .image-box:before {
+  background: var(--gradient-color2);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.feature-box.style2 .content-box {
+  background-color: transparent;
+  bottom: 0;
+  left: 0;
+  padding: 30px 30px 40px;
+  position: absolute;
+  right: 0;
+  top: auto;
+  z-index: 1;
+}
+.feature-box.style2 .content-box .review {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--review-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.feature-box.style2 .content-box .title {
+  color: var(--white-color);
+  margin-bottom: 7px;
+}
+.feature-box.style2 .content-box .text {
+  color: var(--white-color);
+}
+.feature-box.style3 {
+  margin-bottom: 40px;
+}
+.feature-box.style3 .content-box {
+  background-color: var(--theme-color1);
+  padding-bottom: 40px;
+}
+.feature-box.style3 .top-area {
+  margin-bottom: 70px;
+}
+.feature-box.style3 .top-area .top-title {
+  color: var(--white-color);
+  font-size: 62px;
+  line-height: 74px;
+}
+.feature-box.style3 .top-area .text-2 {
+  color: var(--white-color);
+}
+.feature-box.style3 .title {
+  font-size: 38px;
+  line-height: 43px;
+  letter-spacing: 0.316667px;
+  margin-bottom: 25px;
+}
+.feature-box.style3 .title,
+.feature-box.style3 .text {
+  color: var(--white-color);
+}
+.feature-box.style4 .content-box {
+  background-color: transparent;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  padding: 30px 30px 40px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+}
+.feature-box.style4 .title {
+  font-size: 32px;
+  line-height: 40px;
+}
+.feature-box.style4 .title span {
+  background-color: var(--theme-color3);
+  border-radius: 18px;
+  color: var(--white-color);
+  display: inline-block;
+  padding: 0 10px;
 }
 
 /*
