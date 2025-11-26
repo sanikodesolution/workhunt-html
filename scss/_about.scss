@@ -11,6 +11,9 @@
 		font-size: 20px;
 		line-height: 29px;
 		max-width: 90%;
+		@include media-breakpoint-down(md){
+			max-width: none;
+		}
 	}
 }
 .about-list-item{
