@@ -30,9 +30,9 @@ body {
   background-color:var(--bluish-gray);
   color: var(--text-color);
   font-family: var(--body-font);
-  font-size:14px;
-  line-height: 28px;
-  font-weight:400;
+  font-size:var(--font-size-16);
+  line-height: var(--body-line-height);
+  font-weight:var(--body-font-weight);
   font-optical-sizing: auto;
   -ms-word-wrap: break-word;
   word-wrap: break-word;

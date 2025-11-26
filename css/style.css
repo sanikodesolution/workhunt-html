@@ -287,7 +287,7 @@ img {
   --body-font-size: var(--font-size-16);
   --body-font-weight: 400;
   --body-font-weight-bold: 600;
-  --body-line-height: 1.71;
+  --body-line-height: 1.6;
   --line-height-heading: 1.2;
   --line-height-heading2: 1.75;
   --line-height-heading-h1: 1.1;
@@ -357,9 +357,9 @@ body {
   background-color: var(--bluish-gray);
   color: var(--text-color);
   font-family: var(--body-font);
-  font-size: 14px;
-  line-height: 28px;
-  font-weight: 400;
+  font-size: var(--font-size-16);
+  line-height: var(--body-line-height);
+  font-weight: var(--body-font-weight);
   font-optical-sizing: auto;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
@@ -4020,6 +4020,55 @@ header.header-nav {
 .section-title .text,
 .sec-title .text {
   font-size: 20px;
+}
+
+/*  About Us Home One Style  */
+.about-content-box {
+  position: relative;
+}
+.about-content-box .title {
+  font-size: 52px;
+  line-height: 63px;
+  margin-bottom: 10px;
+}
+.about-content-box .text {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  max-width: 90%;
+}
+
+.about-list-item {
+  padding-left: 20px;
+  position: relative;
+}
+.about-list-item:before {
+  background-color: var(--theme-color1);
+  border-radius: 50%;
+  content: "";
+  height: 8px;
+  left: 0;
+  position: absolute;
+  top: 7px;
+  width: 8px;
+}
+.about-list-item .list-text {
+  max-width: 90%;
+}
+
+.about-img-box {
+  position: relative;
+}
+.about-img-box .img-1 {
+  border-radius: 24px;
+}
+.about-img-box .img-2 {
+  border-radius: 18px;
+  left: 30px;
+  position: absolute;
+  top: 30%;
+  -webkit-animation: bounce-y 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+          animation: bounce-y 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 /*  home 1 banner style  */
